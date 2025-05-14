@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import about from "../../assets/hero2.png";
+
 const About = () => {
   const [expanded, setExpanded] = useState(false);
 
@@ -8,12 +9,10 @@ const About = () => {
       {/* Title */}
       <div className="text-center">
         <br /> <br />
-        <h1 className="text-4xl md:text-5xl font-extrabold text-slate-500 hover:text-slate-500 mb-4">
-          About Us
-        </h1>
-        <h3 className="text-lg md:text-base text-slate-500 font-medium hover:text-slate-800">
-          Learn more about our mission and values
-        </h3>{" "}
+        <h3 className="text-3xl md:text-5xl font-bold text-gray-500 hover:text-slate-500 mb-4">
+          Principal Message
+        </h3>
+       
         <br />
       </div>
 
@@ -26,17 +25,14 @@ const About = () => {
             alt="About School"
             className="w-full h-auto rounded-xl shadow-lg transition-transform duration-500 group-hover:scale-90"
           />
-          
         </div>
 
         {/* Text */}
         <div className="w-full md:w-1/2 space-y-5 text-justify">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-500 text-center md:text-left">
-            Sohardh International School
-          </h2>
+          
 
           <p className="text-gray-700 text-base md:text-[17px] leading-loose font-normal">
-            The School respects its educational legitimacy and its
+            Dear <strong>Students</strong> respects its educational legitimacy and its
             responsibility for the scientific scrutiny of its own educational
             acts, for social openness and for special consideration of the weak
             and deprived parts of the society as well as co-operation of all

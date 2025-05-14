@@ -44,7 +44,7 @@ const Program = () => {
                 className="w-full h-64 md:h-52 object-cover transform transition-transform duration-500 group-hover:scale-110"
               />
             </div>
-            <div className="absolute inset-0  bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center px-4 text-center text-white transition-opacity duration-500">
+            <div className="absolute inset-0 bg-blue-400 bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center px-4 text-center text-white transition-opacity duration-500">
               <div className="flex flex-col items-center transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                 {program.icon}
                 <h3 className="text-xl font-bold mb-2">{program.title}</h3>
