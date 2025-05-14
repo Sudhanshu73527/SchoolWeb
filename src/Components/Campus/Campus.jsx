@@ -12,7 +12,8 @@ const Campus = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <section className="py-16 px-4 bg-white" id="campus">
+    <section className="py-16 px-4 bg-white min-h-screen flex flex-col items-center justify-center" id="campus">
+      {/* Section Header */}
       <div className="max-w-7xl mx-auto text-center space-y-6">
         <motion.h3
           className="text-slate-500 text-sm font-semibold uppercase tracking-wider"
@@ -20,8 +21,6 @@ const Campus = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
         >
-          <br />
-          <br />
           Gallery
         </motion.h3>
         <motion.h1
@@ -32,41 +31,41 @@ const Campus = () => {
         >
           Campus Photos
         </motion.h1>
-        <br />
-
-        <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10"
-          initial="hidden"
-          whileInView="visible"
-          variants={{
-            visible: {
-              transition: {
-                staggerChildren: 0.2,
-              },
-            },
-          }}
-        >
-          {images.map((img, index) => (
-            <motion.div
-              key={index}
-              className="overflow-hidden rounded-xl shadow-md cursor-pointer"
-              whileHover={{ scale: 1.05 }}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              onClick={() => setSelectedImage(img)}
-            >
-              <img
-                src={img}
-                alt={`Campus ${index + 1}`}
-                className="w-full h-64 object-cover transition-transform duration-500 hover:scale-90 rounded"
-              />
-            </motion.div>
-          ))}
-        </motion.div>
       </div>
 
-      {/* Image Pop-up Animation */}
+      {/* Gallery Grid */}
+      <motion.div
+        className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10"
+        initial="hidden"
+        whileInView="visible"
+        variants={{
+          visible: {
+            transition: {
+              staggerChildren: 0.2,
+            },
+          },
+        }}
+      >
+        {images.map((img, index) => (
+          <motion.div
+            key={index}
+            className="overflow-hidden rounded-xl shadow-md cursor-pointer"
+            whileHover={{ scale: 1.05 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            onClick={() => setSelectedImage(img)}
+          >
+            <img
+              src={img}
+              alt={`Campus ${index + 1}`}
+              className="w-full h-64 object-cover transition-transform duration-500 hover:scale-105 rounded"
+            />
+          </motion.div>
+        ))}
+      </motion.div>
+
+      {/* Image Pop-up Modal */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div
@@ -79,7 +78,7 @@ const Campus = () => {
             <motion.img
               src={selectedImage}
               alt="Enlarged"
-              className="max-w-3xl w-full max-h-[90vh] rounded-lg shadow-lg"
+              className="max-w-full w-full max-h-[90vh] rounded-lg shadow-lg"
               initial={{ scale: 0.6, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.6, opacity: 0 }}
@@ -87,11 +86,7 @@ const Campus = () => {
             />
           </motion.div>
         )}
-      </AnimatePresence> <br />
-      {/* <button className="px-6 py-3 bg-gradient-to-r from-orange-400 to-yellow-400 text-white text-lg font-semibold rounded-full shadow-lg hover:from-orange-500 hover:to-yellow-500 hover:scale-105 transition-all duration-300 flex items-center gap-3">
-        Show More
-        <FaArrowDown className="animate-bounce-slow" />
-      </button> */}
+      </AnimatePresence>
     </section>
   );
 };
