@@ -50,6 +50,8 @@ const Hero2 = () => {
     );
 
   return (
+    <>
+    <marquee className="bg-orange-100 text-orange-400" behavior="" direction="left">🎓 Admissions Open for 2025–2026! Limited seats available — Enroll now and secure your child’s future!</marquee>
     <section className="bg-orange-100">
       <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative">
         {/* brand info */}
@@ -70,8 +72,9 @@ const Hero2 = () => {
             </AnimatePresence>
 
             <p className="text-gray-600 xl:max-w-[500px]">
-              "Education is the most powerful weapon which you can use to change the world.
-              In learning you will teach, and in teaching you will learn"
+              "Education is the most powerful weapon which you can use to change
+              the world. In learning you will teach, and in teaching you will
+              learn"
             </p>
             <br />
 
@@ -102,6 +105,7 @@ const Hero2 = () => {
         </motion.div>
       </div>
     </section>
+    </>
   );
 };
 

@@ -16,7 +16,7 @@ const testimonials = [
     role: "Parent's",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
     rating: 4,
-    message: "My daughter has blossomed under the care of this school.",
+    message: "My daughter has blossomed under the care of this.",
   },
   {
     name: "Rahul Verma",
@@ -30,7 +30,7 @@ const testimonials = [
     role: "Parent's",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
     rating: 5,
-    message: "This school laid the foundation for my career and success.",
+    message: "This school laid the foundation for my career .",
   },
   {
     name: "Manish Tiwari",
