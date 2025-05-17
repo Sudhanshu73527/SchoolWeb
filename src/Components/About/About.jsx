@@ -3,7 +3,7 @@ import about from "../../assets/hero2.png";
 
 const About = () => {
   const [expanded, setExpanded] = useState(false);
-
+  
   return (
     <div className="max-w-7xl mx-auto px-4 py-16 space-y-12 min-h-screen flex flex-col justify-center">
       {/* Title */}
