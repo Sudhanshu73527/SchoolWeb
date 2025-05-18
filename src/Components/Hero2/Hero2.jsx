@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import heroimage from "../../assets/student1.png";
+import bg1 from "../../assets/hero.png";
+import bg2 from "../../assets/hero2.png";
+import bg3 from "../../assets/hero.png";
 import { motion, AnimatePresence } from "framer-motion";
 
-// SlideLeft animation for text
+// Text animation
 const SlideLeft = {
   initial: { opacity: 0, x: 50 },
   animate: { opacity: 1, x: 0 },
@@ -10,14 +12,16 @@ const SlideLeft = {
   transition: { duration: 0.5 },
 };
 
-// SlideRight animation for image
-const SlideRight = {
-  initial: { opacity: 0, x: -50 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.8 },
+// Background fade animation
+const Fade = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  exit: { opacity: 0 },
+  transition: { duration: 1 },
 };
 
 const Hero2 = () => {
+  const backgroundImages = [bg1, bg2, bg3];
   const thoughts = [
     "Knowledge gives you the perfect IDEA",
     "Education is the passport to the FUTURE",
@@ -25,16 +29,19 @@ const Hero2 = () => {
     "Empower through knowledge, succeed with EFFORT",
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [bgIndex, setBgIndex] = useState(0);
+  const [quoteIndex, setQuoteIndex] = useState(0);
   const [key, setKey] = useState(0);
 
+  // Change background and quote every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % thoughts.length);
+      setBgIndex((prev) => (prev + 1) % backgroundImages.length);
+      setQuoteIndex((prev) => (prev + 1) % thoughts.length);
       setKey((prev) => prev + 1);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
-  }, [thoughts.length]);
+  }, []);
 
   const highlightedWords = ["IDEA", "FUTURE", "MIND", "EFFORT"];
 
@@ -45,18 +52,36 @@ const Hero2 = () => {
           {word}{" "}
         </span>
       ) : (
-        word + " "
+        <span key={index}>{word} </span>
       )
     );
 
   return (
     <>
-    <marquee className="bg-orange-100 text-orange-400" behavior="" direction="left">🎓 Admissions Open for 2025–2026! Limited seats available — Enroll now and secure your child’s future!</marquee>
-    <section className="bg-orange-100">
-      <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative">
-        {/* brand info */}
-        <div className="flex flex-col justify-center py-14 md:py-0">
-          <div className="text-center md:text-left space-y-6">
+      <marquee className="bg-white text-orange-500 font-medium py-1">
+        🎓 Admissions Open for 2025–2026! Limited seats available — Enroll now and secure your child’s future!
+      </marquee>
+
+      <div className="relative min-h-[650px] overflow-hidden flex items-center">
+        {/* Background image transitions */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={bgIndex}
+            variants={Fade}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            transition={Fade.transition}
+            className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+            style={{ backgroundImage: `url(${backgroundImages[bgIndex]})` }}
+          />
+        </AnimatePresence>
+
+        {/* Optional overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-white/20 z-0" />
+
+        <div className="relative z-10 container px-4 mx-auto">
+          <div className="max-w-2xl text-center md:text-left space-y-6 py-20">
             <AnimatePresence mode="wait">
               <motion.h1
                 key={key}
@@ -65,46 +90,24 @@ const Hero2 = () => {
                 animate="animate"
                 exit="exit"
                 transition={SlideLeft.transition}
-                className="text-5xl lg:text-6xl font-bold leading-relaxed xl:leading-normal"
+                className="text-5xl lg:text-6xl font-bold leading-relaxed"
               >
-                {renderThought(thoughts[currentIndex])}
+                {renderThought(thoughts[quoteIndex])}
               </motion.h1>
             </AnimatePresence>
 
-            <p className="text-gray-600 xl:max-w-[500px]">
-              "Education is the most powerful weapon which you can use to change
-              the world. In learning you will teach, and in teaching you will
-              learn"
+            <p className="text-black text-lg font-light max-w-xl">
+              "Education is the most powerful weapon which you can use to change the world. In learning you will teach, and in teaching you will learn."
             </p>
-            <br />
 
-            <div className="flex justify-center md:justify-start">
-              <button
-                onClick={(e) => e.currentTarget.blur()}
-                className="mt-10 flex items-center px-6 py-3 bg-orange-500 text-white font-semi-bold rounded shadow-md transition duration-300 hover:bg-white hover:text-orange-500 active:bg-orange-600 active:text-white"
-              >
+            <div className="pt-6"> <br />
+              <button className="px-6 py-3 bg-orange-500 text-white font-semi-bold rounded shadow hover:bg-white hover:text-orange-500 transition duration-300">
                 Explore More
               </button>
             </div>
           </div>
         </div>
-
-        {/* hero image with SlideRight animation */}
-        <motion.div
-          variants={SlideRight}
-          initial="initial"
-          animate="animate"
-          transition={SlideRight.transition}
-          className="flex justify-center items-center"
-        >
-          <img
-            src={heroimage}
-            alt="Student illustration"
-            className="w-[370px] md:w-[550px] xl:w-[510px] drop-shadow"
-          />
-        </motion.div>
       </div>
-    </section>
     </>
   );
 };

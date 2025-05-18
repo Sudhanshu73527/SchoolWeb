@@ -31,7 +31,7 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:block ml-auto">
-            <ul className="flex items-center gap-6 text-slate-600 relative">
+            <ul className="flex items-center gap-4 text-slate-600 relative">
               {NavbarMenu.map((item) => (
                 <li key={item.id} className="relative group">
                   <a
@@ -43,12 +43,12 @@ const Navbar = () => {
 
                   {/* Submenu */}
                   {item.submenu && (
-                    <ul className="absolute left-0 top-full mt-2 w-30 bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50">
+                    <ul className="absolute left-0 top-full mt-2 w-50 bg-white border border-orange-300 rounded shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50">
                       {item.submenu.map((sub, index) => (
                         <li key={index}>
                           <a
                             href={sub.link}
-                            className="block px-8 py-10 text-sm text-slate-700 hover:bg-orange-100 hover:text-orange-500"
+                            className="block px-8 py-10 text-sm text-slate-700 hover:bg-orange-100 hover:text-orange-500 hover:underline uppercase"
                           >
                             {sub.title}
                           </a>
