@@ -2,7 +2,6 @@
 import React from 'react';
 import Hero from '../Components/Hero/Hero.jsx';
 import Program from '../Components/Program/Program.jsx';
-import About from '../Components/About/About.jsx';
 import Principla from '../Components/Principal/Principla.jsx';
 import Campus from '../Components/Campus/Campus.jsx';
 import Testing from '../Components/Testing.jsx';

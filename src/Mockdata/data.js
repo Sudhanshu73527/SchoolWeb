@@ -1,4 +1,4 @@
-export const NavbarMenu = [
+const NavbarMenu = [
   {
     id: 1,
     title: "home",
@@ -11,25 +11,22 @@ export const NavbarMenu = [
     submenu: [
       { title: "About School", link: "/about/school" },
       { title: "Mission & Vision", link: "/about/vision" },
-      { title: "Principal Message", link: "/about/mission" },
+      { title: "Principal Message", link: "/principal/About Us"},
       {
         title: "School-Gallary",
-        link: "/about/about-gallery",
-        submenu: [
-          { title: "Image Gallery", link: "/about/gallery/images" },
-          { title: "Video Gallery", link: "/about/gallery/videos" },
-        ],
+        link: "/about-gallery",
       },
       { title: "Job-Vacancy", link: "/about/mission" },
     ],
   },
   {
     id: 3,
-    title: "Admission",
+    title: "Admission",   
     link: "#",
     submenu: [
       { title: "Admission Notification's", link: "/admission/Admission" },
       { title: "Online Admission Form", link: "/admission/form" },
+      { title: "Parents Enquiry Form", link: "/admission/parents" },
     ],
   },
   {
@@ -37,14 +34,14 @@ export const NavbarMenu = [
     title: "Mandatory Details",
     link: "#",
     submenu: [
-      { title: "Fee Structure", link: "/admission/Admission" },
-      { title: "Teaching Staff", link: "/admission/form" },
-      { title: "Text-Books", link: "/admission/form" },
-      { title: "Curriculum", link: "/admission/form" },
-      { title: "Infrastructure", link: "/admission/form" },
-      { title: "School-Circular", link: "/admission/form" },
-      { title: "Academic-Calendar", link: "/admission/form" },
-      { title: "Student-Details", link: "/about/mission" },
+      { title: "Fee Structure", link: "/Fee/Mandatory Details" },
+      { title: "Teaching Staff", link: "/staff/Mandatory Details" },
+      { title: "Text-Books", link: "/textbooks/Mandatory Details" },
+      { title: "Curriculum", link: "/curriculam/Mandatory Details" },
+      { title: "Infrastructure", link: "/infrastrucure/Mandatory Details" },
+      { title: "School-Circular", link: "/schoolcircular/Mandatory Details" },
+      { title: "Academic-Calendar", link: "/calender/Mandatory Details" },
+      { title: "Student-Details", link: "/student/Mandatory Details" },
     ],
   },
   {
@@ -52,7 +49,7 @@ export const NavbarMenu = [
     title: "Transfer-certificate",
     link: "#",
     submenu: [
-      { title: "Get-Certificate", link: "/admission/Admission" },
+      { title: "Get-Certificate", link: "/certificate/Transfer-certificate" },
     ],
   },
   {
@@ -60,8 +57,9 @@ export const NavbarMenu = [
     title: "Help",
     link: "#",
     submenu: [
-      { title: "Feedback-form", link: "/about/faculty" },
-      { title: "Contact-us", link: "/about/vision" },
+      { title: "Feedback-form", link: "/feedbackform/Help" },
+      { title: "Contact-us", link: "/contact/Help" },
     ],
   },
 ];
+export default NavbarMenu;

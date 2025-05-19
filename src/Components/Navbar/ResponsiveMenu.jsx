@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
-import { NavbarMenu } from "../../Mockdata/data";
+import  NavbarMenu  from "../../Mockdata/data.js";
 
 const ResponsiveMenu = ({ open }) => {
   const [openSubmenus, setOpenSubmenus] = useState({});
@@ -63,7 +63,7 @@ const ResponsiveMenu = ({ open }) => {
                   </AnimatePresence>
                 </li>
               ))}
-            </ul>
+            </ul> 
           </div>
         </motion.div>
       )}

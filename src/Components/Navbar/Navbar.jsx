@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavbarMenu } from "../../Mockdata/data";
+import  NavbarMenu  from "../../Mockdata/data";
 import { MdMenu } from "react-icons/md";
 import { MdClose } from "react-icons/md";
 import ResponsiveMenu from "./ResponsiveMenu";
