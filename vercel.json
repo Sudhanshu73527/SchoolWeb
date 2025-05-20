@@ -1,0 +1,18 @@
+{
+  "rewrites": [
+    { "source": "/admin/:path*", "destination": "/" },
+    { "source": "/dashboard/:path*", "destination": "/" },
+    { "source": "/user/:path*", "destination": "/" },
+    { "source": "/search", "destination": "/" },
+    { "source": "/login", "destination": "/" },
+    { "source": "/register", "destination": "/" },
+    { "source": "/forgot-password", "destination": "/" },
+    { "source": "/verification-otp", "destination": "/" },
+    { "source": "/reset-password", "destination": "/" },
+    { "source": "/about", "destination": "/" },
+    { "source": "/contact", "destination": "/" },
+    
+    
+    { "source": "/:path*", "destination": "/" }
+  ]
+}
