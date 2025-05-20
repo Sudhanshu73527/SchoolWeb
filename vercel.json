@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/"
+    },
+    {
+      "src": "/admin/(.*)",
+      "dest": "/"
+    },
+    {
+      "src": "/dashboard/(.*)",
+      "dest": "/"
+    },
+    {
+      "src": "/user/(.*)",
+      "dest": "/"
+    },
+    {
+      "src": "/search",
+      "dest": "/"
+    },
+    {
+      "src": "/login",
+      "dest": "/"
+    },
+    {
+      "src": "/register",
+      "dest": "/"
+    },
+    {
+      "src": "/forgot-password",
+      "dest": "/"
+    },
+    {
+      "src": "/verification-otp",
+      "dest": "/"
+    },
+    {
+      "src": "/reset-password",
+      "dest": "/"
+    },
+    {
+      "src": "/about",
+      "dest": "/"
+    },
+    {
+      "src": "/about/(.*)",
+      "dest": "/"
+    },
+    {
+      "src": "/contact",
+      "dest": "/"
+    },
+    {
+      "src": "/contact/(.*)",
+      "dest": "/"
+    },
+    {
+      "src": "/profile/(.*)",
+      "dest": "/"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
