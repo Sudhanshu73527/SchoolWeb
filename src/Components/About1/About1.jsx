@@ -27,12 +27,16 @@ const About1 = () => {
             Shaping Futures Through Quality Education
           </h2>
           <p className="text-gray-700 text-lg">
-            Our mission is to provide a nurturing and intellectually stimulating
-            environment where every student can thrive. We believe in empowering
-            young minds with the knowledge, skills, and values needed to build a
-            better tomorrow.
+            Established in 2016, <strong className="text-orange-600">Sauhardh International School</strong> has grown into a center of
+            excellence, dedicated to nurturing young minds for a brighter
+            tomorrow. Our mission is to empower students with knowledge,
+            character, and confidence to face the challenges of the future. At
+            the heart of our philosophy lies a commitment to academic rigor
+            balanced with holistic development. We believe that education goes
+            beyond textbooks. Our campus buzzes with creativity, sportsmanship,
+            leadership activities, and innovation.
           </p>
-          <p className="text-gray-600">
+          <p className="text-gray-600 text-lg">
             With state-of-the-art facilities, passionate educators, and a strong
             community, we aim to create a foundation for lifelong learning and
             success.

@@ -2,12 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import sunnyimg from "../../assets/hero.png"
 const testimonials = [
   {
     name: "Aarav Mehta",
     role: "Parent's",
-    image: "https://randomuser.me/api/portraits/men/10.jpg",
+    image: sunnyimg,
     rating: 5,
     message: "The faculty here is very helpful and the environment",
   },

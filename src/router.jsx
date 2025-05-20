@@ -20,6 +20,7 @@ import Studentdetails from './Components/Studentdetails/Studentdetails.jsx';
 import Certificate from './Components/TransferCerificate/Certificate.jsx';
 import Feedbackform from './Components/Feedbackform/Feedbackform.jsx';
 import Contact1 from './Components/Contact1/Contact1.jsx';
+import Payment from './Components/Onlinepayment/Payment.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -101,6 +102,10 @@ const router = createBrowserRouter([
       {
         path:"/contact/Help",
         element:<Contact1/>
+      },
+      {
+        path:"payment/Mandatory Details",
+        element:<Payment/>
       }
       // Add more routes here later if needed
     ],

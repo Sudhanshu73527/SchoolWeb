@@ -42,6 +42,7 @@ const NavbarMenu = [
       { title: "School-Circular", link: "/schoolcircular/Mandatory Details" },
       { title: "Academic-Calendar", link: "/calender/Mandatory Details" },
       { title: "Student-Details", link: "/student/Mandatory Details" },
+      { title: "Online-Fee-Payment", link: "/payment/Mandatory Details" },
     ],
   },
   {

@@ -7,9 +7,7 @@ const Principal1 = () => {
       {" "}
       <br /> <br />
       <h1 className="text-4xl md:text-5xl font-bold text-slate-600 text-center mb-10 relative">
-        <span className="">
-          Principal Message
-        </span>
+        <span className="">Principal Message</span>
       </h1>
       <div className="container mx-auto rounded-xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-8">
         {/* Left Image */}
@@ -21,11 +19,10 @@ const Principal1 = () => {
           />
         </div>
         <div className="max-w-sm mx-auto mt-20 p-6 bg-orange-500 rounded text-white cursor-pointer">
-  <p className="text-2xl font-semibold tracking-wide whitespace-nowrap overflow-hidden text-ellipsis hover:bg-white hover:text-orange-500">
-    Mr. Sammer Rai
-  </p>
-</div>
-
+          <p className="text-2xl font-semibold tracking-wide whitespace-nowrap overflow-hidden text-ellipsis hover:bg-white hover:text-orange-500">
+            Mr. Sameer Rai
+          </p>
+        </div>
 
         {/* Right Text */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-5">
@@ -33,15 +30,14 @@ const Principal1 = () => {
             Shaping Futures Through Quality Education
           </h2>
           <p className="text-gray-700 text-lg">
-            Our mission is to provide a nurturing and intellectually stimulating
-            environment where every student can thrive. We believe in empowering
-            young minds with the knowledge, skills, and values needed to build a
-            better tomorrow.
-          </p>
-          <p className="text-gray-600">
-            With state-of-the-art facilities, passionate educators, and a strong
-            community, we aim to create a foundation for lifelong learning and
-            success.
+            Dear Students, Parents, and Esteemed Members of the School
+            Community, At <strong className="text-orange-600">Sauhardh International School</strong> we believe that true education nurtures
+            both the mind and character. Our goal is to create an environment
+            where students grow intellectually, emotionally, and ethically. We
+            are proud of our dedicated teachers who guide each child with care
+            and commitment, and grateful to our parents for their unwavering
+            support. Together, let us continue to inspire, innovate, and ignite
+            a lifelong love for learning. Warm regards, Principal <strong>Mr.Sameer Rai</strong>
           </p>
         </div>
       </div>

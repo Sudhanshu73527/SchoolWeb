@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { FaBook, FaChalkboardTeacher, FaBasketballBall } from "react-icons/fa";
 import { motion } from "framer-motion";
-import program_1 from "../../assets/Anual.jpeg";
+import program_1 from "../../assets/anual12.jpeg";
 import program_2 from "../../assets/price.png";
-import program_3 from "../../assets/program-3.png";
+import program_3 from "../../assets/anual3.jpeg";
 
 const programData = [
   {

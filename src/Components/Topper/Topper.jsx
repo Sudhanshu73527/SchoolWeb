@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import sunnyimg from "../../assets/principal.png"
+import raviimg from "../../assets/hero.png"
 const toppers = [
   {
     name: "Aarav Mehta",
@@ -32,7 +33,7 @@ const toppers = [
   {
     name: "Aisha Qureshi",
     role: "Class 5 Topper",
-    image: "https://randomuser.me/api/portraits/women/22.jpg",
+    image: raviimg,
   },
 ];
 

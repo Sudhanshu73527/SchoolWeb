@@ -1,9 +1,14 @@
 import React from "react";
 
+import activity1 from "../../assets/hero.png";
+import activity2 from "../../assets/hero.png";
+import activity3 from "../../assets/hero.png";
+import activity4 from "../../assets/hero.png";
+
 const activities = [
   {
     id: 1,
-    image: "activity1.jpg",
+    image: activity1,
     day: "27",
     month: "MAR",
     year: "2025",
@@ -12,7 +17,7 @@ const activities = [
   },
   {
     id: 2,
-    image: "activity2.jpg",
+    image: activity2,
     day: "22",
     month: "MAR",
     year: "2025",
@@ -21,16 +26,16 @@ const activities = [
   },
   {
     id: 3,
-    image: "activity3.jpg",
+    image: activity3,
     day: "1",
-    month: "F",
+    month: "FEB",
     year: "2025",
     title: "Annual Athletics",
     description: "Perseverance",
   },
   {
     id: 4,
-    image: "activity4.jpg",
+    image: activity4,
     day: "30",
     month: "JAN",
     year: "2025",

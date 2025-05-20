@@ -1,9 +1,9 @@
 // src/Pages/Home.jsx
 import React from 'react';
-import Hero from '../Components/Hero/Hero.jsx';
+// import Hero from '../Components/Hero/Hero.jsx';
 import Program from '../Components/Program/Program.jsx';
 import Principla from '../Components/Principal/Principla.jsx';
-import Campus from '../Components/Campus/Campus.jsx';
+// import Campus from '../Components/Campus/Campus.jsx';
 import Testing from '../Components/Testing.jsx';
 import Hero2 from '../Components/Hero2/Hero2.jsx';
 import Eqipments from '../Components/Eqipments/Eqipments.jsx';
