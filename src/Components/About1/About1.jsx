@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../../assets/user-2.png"; // Replace with your actual image path
+import aboutImage from "../../assets/school10.jpeg"; // Replace with your actual image path
 
 const About1 = () => {
   return (
@@ -17,7 +17,7 @@ const About1 = () => {
           <img
             src={aboutImage}
             alt="About our school"
-            className="rounded-lg shadow-md w-3/4 md:w-[300px] lg:w-[340px] object-cover w-full max-w-xs border border-orange-200"
+            className="rounded-lg shadow-md w-3/4 md:w-[300px] lg:w-[280px] object-cover w-full max-w-xs border border-orange-200"
           />
         </div>
 

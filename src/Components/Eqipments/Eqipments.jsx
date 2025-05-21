@@ -6,21 +6,21 @@ const EqipmentsData = [
   {
     id: 1,
     title: "Education Equipments",
-    desc: "School is a building with four walls — with tomorrow inside.",
+    desc: "Practical solutions that turn vision into achievement.",
     icons: <GiGraduateCap />,
     delay: 0.3,
   },
   {
     id: 2,
     title: "Modern Classrooms",
-    desc: "Where innovation meets imagination and learning begins.",
+    desc: "Designed to enrich teaching and enhance the student experience at every level",
     icons: <GiGraduateCap />,
     delay: 0.6,
   },
   {
     id: 3,
     title: "Digital Resources",
-    desc: "Empowering students through technology and e-learning tools.",
+    desc: "Supporting academic excellence with reliable educational solutions.",
     icons: <GiGraduateCap />,
     delay: 0.9,
   },
@@ -34,10 +34,10 @@ const Eqipments = () => {
           {/* Heading */}
           <div className="space-y-4 p-6 sm:col-span-2 md:col-span-1 text-center sm:text-left">
             <h1 className="text-3xl md:text-4xl font-bold">
-              What we offer for you
+              Unlock Your Learning Potential
             </h1>
             <p className="text-slate-700">
-             Unlock Your Learning Potential
+             
             </p>
           </div>
 
