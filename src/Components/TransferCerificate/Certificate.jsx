@@ -45,7 +45,7 @@ const Certificate = () => {
             📥 Download Sample
           </a>
           <button
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/request")}
             className="bg-orange-500 text-white px-5 py-2 rounded hover:bg-orange-600 transition"
           >
             📝 Request Certificate

@@ -4,6 +4,7 @@ import { MdMenu } from "react-icons/md";
 import { MdClose } from "react-icons/md";
 import ResponsiveMenu from "./ResponsiveMenu";
 import logo from "../../assets/logo2.png"; // <-- Update this path as per your project structure
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -14,11 +15,13 @@ const Navbar = () => {
         <div className="container mx-auto px-4 flex justify-between items-center py-6">
           {/* Logo and School Name */}
           <div className="flex items-center gap-3">
+          <Link to={"/"}>
             <img
               src={logo}
               alt="School Logo"
               className="w-10 h-10 sm:w-20 sm:h-20 md:w-25 md:h-25 object-contain"
             />
+            </Link>
             <div className="leading-tight">
               <p className="text-base sm:text-lg font-bold uppercase text-orange-600 whitespace-nowrap">
                 Sauhardh International School

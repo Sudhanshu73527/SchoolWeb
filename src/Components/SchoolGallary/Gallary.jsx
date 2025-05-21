@@ -12,20 +12,26 @@ import img9 from "../../assets/anual9.jpeg";
 import img10 from "../../assets/anual10.jpeg";
 import img11 from "../../assets/anual11.jpeg";
 import img12 from "../../assets/anual12.jpeg";
-import img13 from "../../assets/hero.png";
-import img14 from "../../assets/hero.png";
-import img15 from "../../assets/hero.png";
-import img16 from "../../assets/hero.png";
-import img17 from "../../assets/hero.png";
-import img18 from "../../assets/hero.png";
-import img19 from "../../assets/hero.png";
-import img20 from "../../assets/hero.png";
+import img13 from "../../assets/sg7.jpeg";
+import img14 from "../../assets/sg8.jpeg";
+import img15 from "../../assets/sg9.jpeg";
+import img16 from "../../assets/sg12.jpeg";
+import img17 from "../../assets/sg4.jpeg";
+import img18 from "../../assets/sg5.jpeg";
+import img19 from "../../assets/sg6.jpeg";
+import img20 from "../../assets/sg10.jpeg";
+import img21 from "../../assets/bg6.jpeg";
+import img22 from "../../assets/bg2.jpeg";
+import img23 from "../../assets/class1.jpeg";
+import img24 from "../../assets/school1.jpeg";
+
 
 const images = [
   img1, img2, img3, img4, img5,
   img6, img7, img8, img9, img10,
   img11, img12, img13, img14, img15,
-  img16, img17, img18, img19, img20,
+  img16, img17, img18, img19, img20,img21,img22,
+  img23,img24
 ];
 
 const Gallery = () => {

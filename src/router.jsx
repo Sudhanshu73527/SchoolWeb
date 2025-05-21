@@ -21,6 +21,8 @@ import Certificate from './Components/TransferCerificate/Certificate.jsx';
 import Feedbackform from './Components/Feedbackform/Feedbackform.jsx';
 import Contact1 from './Components/Contact1/Contact1.jsx';
 import Payment from './Components/Onlinepayment/Payment.jsx';
+import Requestcertificate from './Components/Requestforcertificate/Requestcertificate.jsx';
+import Schoolcircular from './Components/Schoolcircular/Schoolcircular.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -106,6 +108,14 @@ const router = createBrowserRouter([
       {
         path:"payment/Mandatory Details",
         element:<Payment/>
+      },
+      {
+        path:"/schoolcircular/Mandatory Details",
+        element:<Schoolcircular/>
+      },
+      {
+        path:"/request",
+        element:<Requestcertificate/>
       }
       // Add more routes here later if needed
     ],

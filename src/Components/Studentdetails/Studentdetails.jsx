@@ -27,9 +27,9 @@ const Studentdetails = () => {
         transition={{ duration: 0.5 }}
       >
         🎓 Student Details by Class
-      </motion.h2>
+      </motion.h2> <br />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl w-full">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl w-full">
         {studentData.map((item, index) => (
           <motion.div
             key={index}
@@ -38,8 +38,12 @@ const Studentdetails = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
           >
-            <h3 className="text-xl font-semibold text-orange-500 mb-2">{item.class}</h3>
-            <p className="text-gray-700 text-lg">👨‍🎓 Students: <strong>{item.count}</strong></p>
+            <h3 className="text-xl font-semibold text-orange-500 mb-2">
+              {item.class}
+            </h3>
+            <p className="text-gray-700 text-lg">
+              👨‍🎓 Students: <strong>{item.count}</strong>
+            </p>
           </motion.div>
         ))}
       </div>
