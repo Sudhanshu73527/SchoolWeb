@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-white shadow-md my-10">
+      <nav className="bg-orange-100 shadow-md my-10">
         <div className="container mx-auto px-4 flex justify-between items-center py-6">
           {/* Logo and School Name */}
           <div className="flex items-center gap-3">

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 // ✅ Import images (replace with real image paths)
-import buildingImg from "../../assets/hero.png";
-import classroomImg from "../../assets/hero.png";
-import officeImg from "../../assets/hero.png";
-import receptionImg from "../../assets/hero.png";
-import libraryImg from "../../assets/hero.png";
-import labImg from "../../assets/hero.png";
-
+import buildingImg from "../../assets/bg7.jpeg";
+import classroomImg from "../../assets/class2.jpeg";
+import officeImg from "../../assets/principal2.jpeg";
+import receptionImg from "../../assets/rep2.jpeg";
+import libraryImg from "../../assets/lib2.jpeg";
+import labImg from "../../assets/comp1.jpeg";
+import scilab from "../../assets/science2.jpeg"
 const infrastructureItems = [
   {
     title: "Main School Building",
@@ -42,6 +42,12 @@ const infrastructureItems = [
   {
     title: "Computer Laboratory",
     image: labImg,
+    description:
+      "State-of-the-art lab to conduct practical experiments for science learning.",
+  },
+   {
+    title: "Science Laboratory",
+    image: scilab,
     description:
       "State-of-the-art lab to conduct practical experiments for science learning.",
   },

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import bg1 from "../../assets/hero.png";
-import bg2 from "../../assets/hero2.png";
-import bg3 from "../../assets/hero.png";
+import bg1 from "../../assets/bg4.jpeg";
+import bg2 from "../../assets/bg6.jpeg";
+import bg3 from "../../assets/bg3.jpeg";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Text animation

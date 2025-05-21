@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import preprimaryImg from "../../assets/preprimary.jpg";
+import preprimaryImg from "../../assets/preprimary.jpeg";
 import primaryImg from "../../assets/primary.jpg";
 import secondaryImg from "../../assets/secondary.jpg";
 

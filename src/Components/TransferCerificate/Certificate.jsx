@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import certificateSample from "../../assets/hero.png"; // Replace with actual image
+import certificateSample from "../../assets/bg1.jpeg"; // Replace with actual image
 import { useNavigate } from "react-router-dom";
 
 const Certificate = () => {
-    const navigate= useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-blue-50 py-12 px-4 flex flex-col items-center">
       <motion.h2
@@ -22,14 +22,18 @@ const Certificate = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <img
-          src={certificateSample}
-          alt="Sample Transfer Certificate"
-          className="w-full h-auto mb-6 rounded-lg border border-gray-200"
-        />
+        <div className="flex justify-center mb-6">
+          <img
+            src={certificateSample}
+            alt="Sample Transfer Certificate"
+            className="w-full md:w-1/2 h-auto rounded-lg border border-gray-200"
+          />
+        </div>
 
         <p className="text-gray-700 text-md mb-6 text-center">
-          If you are a student or parent looking to obtain a transfer certificate, you can download the sample above or request an official certificate by clicking the button below.
+          If you are a student or parent looking to obtain a transfer
+          certificate, you can download the sample above or request an official
+          certificate by clicking the button below.
         </p>
 
         <div className="flex justify-center gap-4">
@@ -41,7 +45,7 @@ const Certificate = () => {
             📥 Download Sample
           </a>
           <button
-            onClick={() =>navigate("/")}
+            onClick={() => navigate("/")}
             className="bg-orange-500 text-white px-5 py-2 rounded hover:bg-orange-600 transition"
           >
             📝 Request Certificate
