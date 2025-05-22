@@ -47,6 +47,7 @@ const Schoolcircular = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 font-medium"
+              onClick={()=>{}}
             >
               <FileText size={18} />
               View Circular

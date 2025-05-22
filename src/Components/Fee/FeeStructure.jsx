@@ -13,12 +13,12 @@ const FeeStructure = () => {
     { class: "Class 2", admissionFee: 2000, tuitionFee: 400 },
     { class: "Class 3", admissionFee: 2000, tuitionFee: 400 },
     { class: "Class 4", admissionFee: 2000, tuitionFee: 400 },
-    { class: "Class 5", admissionFee: 2000, tuitionFee: 400 },
-    { class: "Class 6", admissionFee: 2000, tuitionFee: 400 },
-    { class: "Class 7", admissionFee: 2000, tuitionFee: 400 },
-    { class: "Class 8", admissionFee: 2000, tuitionFee: 400 },
-    { class: "Class 9", admissionFee: 2000, tuitionFee: 400 },
-    { class: "Class 10", admissionFee: 2000, tuitionFee: 400 },
+    { class: "Class 5", admissionFee: 2000, tuitionFee: 500 },
+    { class: "Class 6", admissionFee: 2000, tuitionFee: 550 },
+    { class: "Class 7", admissionFee: 2000, tuitionFee: 550 },
+    { class: "Class 8", admissionFee: 2000, tuitionFee: 600 },
+    { class: "Class 9", admissionFee: 2000, tuitionFee: 800 },
+    { class: "Class 10", admissionFee: 2000, tuitionFee: 1000 },
   ];
 
   const handleDownloadPDF = () => {

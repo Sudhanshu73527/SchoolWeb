@@ -2,28 +2,32 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import sunnyimg from "../../assets/principal.png"
-import raviimg from "../../assets/hero.png"
+import sunnyimg from "../../assets/sip1.png"
+import raviimg from "../../assets/sip2.png"
+import lawimg from "../../assets/sip3.png"
+import kushimg from "../../assets/sip4.png"
+
+
 const toppers = [
   {
-    name: "Aarav Mehta",
-    role: "Class 10 Topper",
-    image: "https://randomuser.me/api/portraits/men/10.jpg",
+    name: "Lav Kumar Gupta",
+    role: "Class 4th Topper",
+    image: lawimg,
   },
   {
-    name: "Mohan Sharma",
-    role: "Class 9 Topper",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: "Kush Kumar Gupta",
+    role: "Class 4th Topper",
+    image: kushimg,
   },
   {
-    name: "Rahul Verma",
-    role: "Class 8 Topper",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "Pulkit kumar pandey",
+    role: "Class UKG Topper",
+    image: raviimg,
   },
   {
-    name: "Satish Pandey",
-    role: "Class 7 Topper",
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    name: "Piyush Kumar Pandey",
+    role: "Class 3rd Topper",
+    image: sunnyimg,
   },
   {
     name: "Manish Tiwari",

@@ -2,7 +2,13 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import sunnyimg from "../../assets/hero.png"
+import sunnyimg from "../../assets/avtar8.png"
+import avtar from "../../assets/avtar1.jpg"
+import avtarimg from "../../assets/avtar2.jpg"
+import avtarimg1 from "../../assets/avtar6.png"
+import avtarimg2 from "../../assets/avtar7.png"
+import avtarimg3 from "../../assets/avtar8.png"
+
 const testimonials = [
   {
     name: "Aarav Mehta",
@@ -14,35 +20,35 @@ const testimonials = [
   {
     name: "Mohan Sharma",
     role: "Parent's",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    image: avtar,
     rating: 4,
     message: "My daughter has blossomed under the care of this.",
   },
   {
     name: "Rahul Verma",
     role: "Parent's",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image: avtarimg,
     rating: 3,
     message: "Great infrastructure and administration.",
   },
   {
     name: "Satish Pandey",
     role: "Parent's",
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    image: avtarimg1,
     rating: 5,
     message: "This school laid the foundation for my career .",
   },
   {
     name: "Manish Tiwari",
     role: "Parent's",
-    image: "https://randomuser.me/api/portraits/men/71.jpg",
+    image: avtarimg2,
     rating: 4,
     message: "The curriculum is very well designed and practical.",
   },
   {
     name: "Aisha Qureshi",
     role: "Parent's",
-    image: "https://randomuser.me/api/portraits/women/22.jpg",
+    image: avtarimg3,
     rating: 3.5,
     message: "The co-curricular activities are fun and enriching!",
   },

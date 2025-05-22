@@ -1,9 +1,9 @@
 import React from "react";
 
-import activity1 from "../../assets/hero.png";
-import activity2 from "../../assets/hero.png";
-import activity3 from "../../assets/hero.png";
-import activity4 from "../../assets/hero.png";
+import activity1 from "../../assets/art.jpeg";
+import activity2 from "../../assets/sg11.jpeg";
+import activity3 from "../../assets/anualath.png";
+import activity4 from "../../assets/sip.png";
 
 const activities = [
   {
@@ -13,7 +13,7 @@ const activities = [
     month: "MAR",
     year: "2025",
     title: "ART CURATED SHOW",
-    description: "Students of Delhi ...",
+    description: "Students of Sauhardh ...",
   },
   {
     id: 2,
@@ -21,8 +21,8 @@ const activities = [
     day: "22",
     month: "MAR",
     year: "2025",
-    title: "Parent Partnership",
-    description: "Delhi Public Schoo...",
+    title: "Teacher Partnership",
+    description: "Sauhardh international School...",
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const activities = [
     day: "30",
     month: "JAN",
     year: "2025",
-    title: "Veer Gatha : Ho...",
+    title: "House Wise Connection's",
     description: "On the solemn occa...",
   },
 ];

@@ -67,6 +67,18 @@ const Requestcertificate = () => {
               className="w-full mt-1 p-2 border border-gray-300 rounded"
             />
           </div>
+
+          <div>
+            <label className="block font-medium">class</label>
+            <input
+              type="text"
+              name="rollNumber"
+              value={formData.rollNumber}
+              onChange={handleChange}
+              required
+              className="w-full mt-1 p-2 border border-gray-300 rounded"
+            />
+          </div>
           <div>
             <label className="block font-medium">Reason for Transfer</label>
             <textarea
