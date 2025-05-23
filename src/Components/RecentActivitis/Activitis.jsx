@@ -39,8 +39,8 @@ const activities = [
     day: "30",
     month: "JAN",
     year: "2025",
-    title: "House Wise Connection's",
-    description: "Students of Sauhardh ...",
+    title: "House Wise Compatation's",
+    description: "Students of Sauhardh...",
   },
 ];
 
