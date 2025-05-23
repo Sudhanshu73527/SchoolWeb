@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import teacherPhoto from "../../assets/hero.png";
+import teacherPhoto from "../../assets/teacheravt2.png";
 
 const staffMembers = [
   { name: "Mrs. Anjali Sharma", photo: teacherPhoto, subject: "Mathematics" },

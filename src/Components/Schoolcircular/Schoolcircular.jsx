@@ -1,5 +1,6 @@
 import React from "react";
 import { FileText } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const circulars = [
   {
@@ -23,6 +24,7 @@ const circulars = [
 ];
 
 const Schoolcircular = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 flex flex-col items-center">
       <h2 className="text-3xl font-bold text-orange-600 mb-8 text-center">
@@ -47,9 +49,9 @@ const Schoolcircular = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 font-medium"
-              onClick={()=>{}}
+              onClick={()=>navigate("/circular")}
             >
-              <FileText size={18} />
+              <FileText size={18}/>
               View Circular
             </a>
           </div>

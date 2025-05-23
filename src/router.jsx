@@ -23,6 +23,7 @@ import Contact1 from './Components/Contact1/Contact1.jsx';
 import Payment from './Components/Onlinepayment/Payment.jsx';
 import Requestcertificate from './Components/Requestforcertificate/Requestcertificate.jsx';
 import Schoolcircular from './Components/Schoolcircular/Schoolcircular.jsx';
+import Viewcircular from './Components/ViewCircular/Viewcircular.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -116,6 +117,10 @@ const router = createBrowserRouter([
       {
         path:"/request",
         element:<Requestcertificate/>
+      },
+      {
+        path:"/circular",
+        element:<Viewcircular/>
       }
       // Add more routes here later if needed
     ],

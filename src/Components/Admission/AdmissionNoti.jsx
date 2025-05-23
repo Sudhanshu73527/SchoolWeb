@@ -9,7 +9,7 @@ const notifications = [
   },
   {
     title: "Entrance Exam Schedule Released",
-    description: "Entrance exam for new admissions will be held on June 10, 2025 at 10 AM.",
+    description: "Not Released",
     date: "May 15, 2025",
     type: "important",
   },
@@ -59,3 +59,7 @@ const AdmissionNoti = () => {
 };
 
 export default AdmissionNoti;
+
+
+
+    // description: "Entrance exam for new admissions will be held on June 10, 2025 at 10 AM.",

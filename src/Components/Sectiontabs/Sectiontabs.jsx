@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import preprimaryImg from "../../assets/preprimary.jpeg";
 import primaryImg from "../../assets/primary.jpg";
 import secondaryImg from "../../assets/secondary.jpg";
+import seniorSecondaryImg from "../../assets/school5.jpeg"; // Add your actual image here
 
 const Sectiontabs = () => {
   const [activeTab, setActiveTab] = useState('Preprimary');
 
-  const tabs = ['Preprimary', 'Primary', 'Secondary'];
+  const tabs = ['Preprimary', 'Primary', 'Secondary', 'Senior Secondary'];
 
   // Content and images for each section
   const sectionContent = {
@@ -22,6 +23,10 @@ const Sectiontabs = () => {
       img: secondaryImg,
       text: 'The Secondary Section prepares students for higher education and the future by encouraging critical thinking, problem-solving, and deeper subject understanding.',
     },
+    'Senior Secondary': {
+      img: seniorSecondaryImg,
+      text: 'The Senior Secondary Section provides specialized subject knowledge, career readiness, and preparation for competitive examinations and higher studies.',
+    },
   };
 
   const getLayoutStyles = () => {
@@ -35,6 +40,11 @@ const Sectiontabs = () => {
         return {
           bg: 'bg-slate-300',
           direction: 'lg:flex-row',
+        };
+      case 'Senior Secondary':
+        return {
+          bg: 'bg-purple-200',
+          direction: 'lg:flex-row-reverse',
         };
       default:
         return {
@@ -86,7 +96,6 @@ const Sectiontabs = () => {
           <p className="text-gray-800 text-xl mb-4">
             {text}
           </p>
-          
         </div>
       </div>
     </div>

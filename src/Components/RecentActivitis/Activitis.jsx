@@ -31,7 +31,7 @@ const activities = [
     month: "FEB",
     year: "2025",
     title: "Annual Athletics",
-    description: "Perseverance",
+    description: "Students of Sauhardh ...",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const activities = [
     month: "JAN",
     year: "2025",
     title: "House Wise Connection's",
-    description: "On the solemn occa...",
+    description: "Students of Sauhardh ...",
   },
 ];
 

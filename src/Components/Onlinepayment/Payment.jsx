@@ -5,7 +5,7 @@ const Payment = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
       <div className="max-w-2xl w-full bg-white shadow-lg rounded-lg p-6">
-        <p className="text-lg font-semibold text-orange-500 text-center border rounded-xl mb-4">
+        <p className="text-lg font-semibold text-orange-500 text-center border rounded mb-4">
           You can scan the QR Code and pay also
         </p>
         <div className="flex justify-center bg-black">
