@@ -14,7 +14,7 @@ const programData = [
   },
   {
     image: program_2,
-    title: "Spreading Price ",
+    title: "Spreading Prize ",
     description: "Interactive, tech-enabled classrooms for 21st century skills.",
     icon: <FaChalkboardTeacher className="text-6xl mb-3" />,
   },
