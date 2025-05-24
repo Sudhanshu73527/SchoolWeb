@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import preprimaryImg from "../../assets/preprimary.jpeg";
-import primaryImg from "../../assets/primary.jpg";
-import secondaryImg from "../../assets/secondary.jpg";
+import preprimaryImg from "../../assets/sunny4.jpeg";
+import primaryImg from "../../assets/sunny5.jpeg";
+import secondaryImg from "../../assets/sunny6.jpeg";
 import seniorSecondaryImg from "../../assets/school5.jpeg"; // Add your actual image here
 
 const Sectiontabs = () => {
@@ -48,7 +48,7 @@ const Sectiontabs = () => {
         };
       default:
         return {
-          bg: 'bg-green-300',
+          bg: 'bg-red-200',
           direction: 'lg:flex-row',
         };
     }

@@ -7,7 +7,7 @@ const Principal1 = () => {
       {" "}
       <br /> <br />
       <h1 className="text-4xl md:text-5xl font-bold text-slate-600 text-center mb-10 relative">
-        <span className="">Principal Message</span>
+        <span className="">Principal's Message</span>
       </h1>
       <div className="container mx-auto rounded-xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-8">
         {/* Left Image */}
@@ -18,16 +18,16 @@ const Principal1 = () => {
             className="rounded-lg shadow-md w-3/4 md:w-[300px] lg:w-[280px] object-cover w-full max-w-xs border border-orange-200"
           />
         </div>
-        <div className="max-w-sm mx-auto mt-20 p-6 bg-orange-500 rounded text-white cursor-pointer">
+        {/* <div className="max-w-sm mx-auto mt-20 p-6 bg-orange-500 rounded text-white cursor-pointer">
           <p className="text-2xl font-semibold tracking-wide whitespace-nowrap overflow-hidden text-ellipsis hover:bg-white hover:text-orange-500">
             Mr. Sameer Rai
           </p>
-        </div>
+        </div> */}
 
         {/* Right Text */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-5">
           <h2 className="text-3xl md:text-4xl font-bold text-orange-500">
-            Shaping Futures Through Quality Education
+            Learning Today, Leading Tomorrow
           </h2>
           <p className="text-gray-700 text-lg">
             Dear Students, Parents, and Esteemed Members of the School

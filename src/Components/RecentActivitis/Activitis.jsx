@@ -1,8 +1,8 @@
 import React from "react";
 
 import activity1 from "../../assets/art.jpeg";
-import activity2 from "../../assets/sg11.jpeg";
-import activity3 from "../../assets/anualath.png";
+import activity2 from "../../assets/wha2.jpeg";
+import activity3 from "../../assets/wha3.jpeg";
 import activity4 from "../../assets/sip.png";
 
 const activities = [
@@ -21,7 +21,7 @@ const activities = [
     day: "22",
     month: "MAR",
     year: "2025",
-    title: "Teacher Partnership",
+    title: "Tree Plantation",
     description: "Sauhardh international School...",
   },
   {
@@ -39,7 +39,7 @@ const activities = [
     day: "30",
     month: "JAN",
     year: "2025",
-    title: "House Wise Compatation's",
+    title: "Inter house Competition's",
     description: "Students of Sauhardh...",
   },
 ];
@@ -78,9 +78,9 @@ export default function RecentActivities() {
                   </div>
                 </div>
               </div>
-              <div className="text-orange-500 bg-slate-700 font-semibold text-center py-2 border-t border-gray-200 hover:underline cursor-pointer">
-                + Read more
-              </div>
+              <button className="text-orange-500 bg-slate-700 font-semibold text-center py-2 border-t border-gray-200 hover:underline cursor-pointer">
+                 +Read more 
+              </button>
             </div>
           ))}
         </div>

@@ -24,6 +24,9 @@ import Payment from './Components/Onlinepayment/Payment.jsx';
 import Requestcertificate from './Components/Requestforcertificate/Requestcertificate.jsx';
 import Schoolcircular from './Components/Schoolcircular/Schoolcircular.jsx';
 import Viewcircular from './Components/ViewCircular/Viewcircular.jsx';
+import Rte from './Components/Rte/Rte.jsx';
+import Principal1 from './Components/Principal1/Principal1.jsx';
+import Recipt from './Components/Uploadrecipt/Recipt.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -43,8 +46,8 @@ const router = createBrowserRouter([
         element : <MissionVision />
       },
       {
-        path:"/principal/About Us",
-        element: <About1/>
+        path:"/principal/message",
+        element: <Principal1/>
       },
       {
         path:"/about/mission",
@@ -121,6 +124,14 @@ const router = createBrowserRouter([
       {
         path:"/circular",
         element:<Viewcircular/>
+      },
+      {
+        path:"/about/rte",
+        element:<Rte/>
+      },
+      {
+        path:"/recipt/Mandatory Details",
+        element:<Recipt/>
       }
       // Add more routes here later if needed
     ],

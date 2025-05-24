@@ -1,5 +1,5 @@
 import React from 'react';
-import paymentImage from '../../assets/Or.jpeg'; // Adjust path as needed
+import paymentImage from '../../assets/wha9.jpeg'; // Adjust path as needed
 
 const Payment = () => {
   return (
@@ -9,7 +9,9 @@ const Payment = () => {
           You can scan the QR Code and pay also
         </p>
         <div className="flex justify-center bg-black">
-          <img src={paymentImage} alt="Payment Banner" className="h-70 object-contain" />
+          <a href={paymentImage} target="_blank" rel="noopener noreferrer">
+            <img src={paymentImage} alt="Payment Banner" className="h-70 object-contain cursor-pointer" />
+          </a>
         </div>
         <p className='text-center text-lg text-orange-500'>pay now</p>
       </div>

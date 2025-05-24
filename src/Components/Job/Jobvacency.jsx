@@ -32,6 +32,8 @@ const JobVacancy = () => {
   if (!showForm) return null;
 
   return (
+    <>
+    <marquee behavior="" direction="left" className="text-xl text-orange-500 font-semibold">No Requirment any teacher Right now </marquee>
     <div className="min-h-screen bg-gradient-to-br from-white to-blue-50 flex items-center justify-center px-4 py-10">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -131,6 +133,7 @@ const JobVacancy = () => {
         </form>
       </motion.div>
     </div>
+    </>
   );
 };
 

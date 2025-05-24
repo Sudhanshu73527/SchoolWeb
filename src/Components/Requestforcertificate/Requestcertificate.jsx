@@ -20,23 +20,30 @@ const RequestCertificate = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const confirmed = window.confirm(
+      "Are you sure you want to request a Transfer Certificate?"
+    );
+
+    if (!confirmed) return;
+
     const { studentName, rollNumber, className, reason } = formData;
 
     const message = `Transfer Certificate Request:%0AStudent Name: ${studentName}%0ARoll Number: ${rollNumber}%0AClass: ${className}%0AReason: ${reason}`;
-    const phoneNumber = "9177396 92245";
+    const phoneNumber = "917739692245"; // No spaces
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappURL, "_blank");
   };
 
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-fixed overflow-hidden">
-      {/* Blurred background image */}
+      {/* Blurred Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center blur-sm scale-110"
         style={{ backgroundImage: `url(${backgroundImage})` }}
-      ></div>
+      />
 
-      {/* Foreground content */}
+      {/* Foreground Form */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -56,7 +63,7 @@ const RequestCertificate = () => {
               value={formData.studentName}
               onChange={handleChange}
               required
-              className="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-none"
+              className="w-full mt-1 p-2 border border-gray-300 rounded"
             />
           </div>
 
@@ -68,7 +75,7 @@ const RequestCertificate = () => {
               value={formData.rollNumber}
               onChange={handleChange}
               required
-              className="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-none"
+              className="w-full mt-1 p-2 border border-gray-300 rounded"
             />
           </div>
 
@@ -79,16 +86,20 @@ const RequestCertificate = () => {
               value={formData.className}
               onChange={handleChange}
               required
-              className="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-none"
+              className="w-full mt-1 p-2 border border-gray-300 rounded"
             >
-              <option value="" disabled>Select Class</option>
+              <option value="" disabled>
+                Select Class
+              </option>
               {[
                 "Nursery", "LKG", "UKG",
                 "1st", "2nd", "3rd", "4th", "5th",
                 "6th", "7th", "8th", "9th", "10th",
                 "11th", "12th"
               ].map((cls) => (
-                <option key={cls} value={cls}>{cls}</option>
+                <option key={cls} value={cls}>
+                  {cls}
+                </option>
               ))}
             </select>
           </div>
@@ -100,7 +111,8 @@ const RequestCertificate = () => {
               value={formData.reason}
               onChange={handleChange}
               required
-              className="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-none"
+              rows="3"
+              className="w-full mt-1 p-2 border border-gray-300 rounded"
             />
           </div>
 

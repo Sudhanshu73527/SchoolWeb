@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaTimes } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import backgroundImage from '../../assets/hero.png'; // Import your image
+import backgroundImage from '../../assets/wha1.jpeg'; // Import your image
 
 function MissionVision() {
   const navigate = useNavigate();
@@ -48,7 +48,7 @@ function MissionVision() {
           <p className="text-gray-700 text-base md:text-lg leading-relaxed">
             To be a leading educational platform that empowers students globally with accessible, high-quality, and future-ready learning experiences that inspire lifelong learning and innovation.
           </p>
-        </motion.div>
+        </motion.div> <br />
 
         <motion.div
           initial={{ opacity: 0, x: 50 }}

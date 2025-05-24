@@ -1,19 +1,19 @@
 import React from "react";
 
 // ✅ Import real images from your assets folder
-import activity1 from "../../assets/hero.png";
+import activity1 from "../../assets/sunny8.jpeg";
 import activity2 from "../../assets/art.jpeg";
-import activity3 from "../../assets/rep1.jpeg";
-import activity4 from "../../assets/rep2.jpeg";
+import activity3 from "../../assets/wha3.jpeg";
+import activity4 from "../../assets/sunny4.jpeg";
 import activity5 from "../../assets/science1.jpeg";
-import activity6 from "../../assets/science2.jpeg";
+import activity6 from "../../assets/sunny9.jpeg";
 
 const activities = [
   {
-    title: "Science Fair",
+    title: "Kite Fair",
     image: activity1,
     description:
-      "Students showcased their creative science projects and models to explain various scientific principles.",
+      "Describe a colorful kite fair filled with vibrant kites, joyful crowds, music, and food stalls.",
   },
   {
     title: "Art Competition",
@@ -28,10 +28,10 @@ const activities = [
       "A fun-filled day of track and field events, teamwork, and sportsmanship for all classes.",
   },
   {
-    title: "Yoga Session",
+    title: "Holi Fair",
     image: activity4,
     description:
-      "A guided yoga and mindfulness session to promote physical and mental well-being.",
+      "Describe a joyful Holi fair with vibrant colors, music, dance, food stalls, and people celebrating the festival of colors together.",
   },
   {
     title: "Cultural Program",

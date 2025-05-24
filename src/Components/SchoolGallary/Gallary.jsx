@@ -24,6 +24,21 @@ import img21 from "../../assets/bg6.jpeg";
 import img22 from "../../assets/bg2.jpeg";
 import img23 from "../../assets/class1.jpeg";
 import img24 from "../../assets/school1.jpeg";
+import img25 from "../../assets/sunny1.jpeg";
+import img26 from "../../assets/sunny2.jpeg";
+import img27 from "../../assets/sunny3.jpeg";
+import img28 from "../../assets/sunny4.jpeg";
+import img29 from "../../assets/sunny5.jpeg";
+import img30 from "../../assets/sunny6.jpeg";
+import img31 from "../../assets/sunny7.jpeg";
+import img32 from "../../assets/sunny8.jpeg";
+import img33 from "../../assets/sunny9.jpeg";
+import img34 from "../../assets/sunny10.jpeg";
+import img35 from "../../assets/sunny11.jpeg";
+import img36 from "../../assets/sunny12.jpeg";
+import img37 from "../../assets/sunny13.jpeg";
+
+
 
 
 const images = [
@@ -31,7 +46,8 @@ const images = [
   img6, img7, img8, img9, img10,
   img11, img12, img13, img14, img15,
   img16, img17, img18, img19, img20,img21,img22,
-  img23,img24
+  img23,img24,img25,img26,img27,img28,img29,img30,img31,img32,
+  img33,img34,img35,img36,img37
 ];
 
 const Gallery = () => {

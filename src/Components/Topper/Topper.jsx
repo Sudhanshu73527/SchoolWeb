@@ -6,8 +6,10 @@ import sunnyimg from "../../assets/sip1.png"
 import raviimg from "../../assets/sip2.png"
 import lawimg from "../../assets/sip3.png"
 import kushimg from "../../assets/sip4.png"
-
-
+import topper1 from "../../assets/top1.png"
+import topper2 from "../../assets/top2.png"
+import topper3 from "../../assets/top3.png"
+import topper4 from "../../assets/top4.png"
 const toppers = [
   {
     name: "Lav Kumar Gupta",
@@ -31,13 +33,23 @@ const toppers = [
   },
   {
     name: "Manish Tiwari",
-    role: "Class 6 Topper",
-    image: sunnyimg ,
+    role: "Class 2 Topper",
+    image: topper1 ,
   },
   {
-    name: "Aisha Qureshi",
+    name: "Kumari",
     role: "Class 5 Topper",
-    image: raviimg,
+    image: topper2,
+  },
+  {
+    name: "Kumari",
+    role: "Class 5 Topper",
+    image: topper3,
+  },
+  {
+    name: "Kumari",
+    role: "Class 5 Topper",
+    image: topper4,
   },
 ];
 

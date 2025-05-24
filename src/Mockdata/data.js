@@ -11,17 +11,18 @@ const NavbarMenu = [
     submenu: [
       { title: "About School", link: "/about/school" },
       { title: "Mission & Vision", link: "/about/vision" },
-      { title: "Principal Message", link: "/principal/About Us"},
+      { title: "Principal Message", link: "/principal/message" },
       {
         title: "School-Gallary",
         link: "/about-gallery",
       },
       { title: "Job-Vacancy", link: "/about/mission" },
+      { title: "RTE", link: "/about/rte" },
     ],
   },
   {
     id: 3,
-    title: "Admission",   
+    title: "Admission",
     link: "#",
     submenu: [
       { title: "Admission Notification's", link: "/admission/Admission" },
@@ -43,6 +44,7 @@ const NavbarMenu = [
       { title: "Academic-Calendar", link: "/calender/Mandatory Details" },
       { title: "Student-Details", link: "/student/Mandatory Details" },
       { title: "Online-Fee-Payment", link: "/payment/Mandatory Details" },
+      { title: "Upload-Fee-Receipt", link: "/recipt/Mandatory Details" },
     ],
   },
   {

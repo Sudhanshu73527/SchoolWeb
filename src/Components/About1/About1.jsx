@@ -3,14 +3,20 @@ import aboutImage from "../../assets/bg3.jpeg"; // Replace with your actual imag
 
 const About1 = () => {
   return (
-    <section className="bg-white py-16 px-4">
-      {" "}
+    <section className="bg-white py-16 px-4 relative">
+      {/* Top info row for Reg. No and UDISE No */}
+      <div className="flex justify-between text-sm text-gray-600 px-6 mb-4 absolute top-4 left-0 right-0">
+        <span className="font-medium font-semibold text-orange-400 border rounded">UDISE No: 100111212011</span>
+        <span className="font-medium font-semibold text-orange-400 border rounded">Reg. No: 203101420221221152234</span>
+      </div>
+
       <br /> <br />
       <h1 className="text-4xl md:text-5xl font-bold text-slate-600 text-center mb-10 relative">
         <span className="inline-block border-b-4 border-slate-400 pb-2">
           About School
         </span>
       </h1>
+
       <div className="container mx-auto rounded-xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-8">
         {/* Left Image */}
         <div className="w-full md:w-1/2 flex justify-center">
