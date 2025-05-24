@@ -12,13 +12,13 @@ import ramp from "../../assets/wha5.jpeg"
 import cwsn from "../../assets/wha7.jpeg"
 const infrastructureItems = [
   {
-    title: "Main School Building",
+    title: "Main School Building (2000 sqft)",
     image: buildingImg,
     description:
       "Our modern school building is designed for comfort, safety, and academic excellence.",
   },
   {
-    title: "Classrooms  (28 * 20 ft)",
+    title: "Classrooms  (28*20 ft)",
     image: classroomImg,
     description:
       "Spacious and well-lit classrooms equipped with smart boards and comfortable seating.",
