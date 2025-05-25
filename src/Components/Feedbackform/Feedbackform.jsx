@@ -17,7 +17,7 @@ const Feedbackform = () => {
     e.preventDefault();
 
     const { name, role, email, message } = formData;
-    const whatsappNumber = "7352205506"; 
+    const whatsappNumber = "7739692245"; 
 
     const whatsappMessage = `Feedback Form Submission:%0A👤 Name: ${name}%0A🎓 Role: ${role}%0A📧 Email: ${email}%0A📝 Message: ${message}`;
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(

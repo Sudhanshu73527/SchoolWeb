@@ -8,7 +8,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const phoneNumber = '7352205506'; 
+    const phoneNumber = '7739692245';  
     const encodedMessage = encodeURIComponent(
       `Hello, my name is ${name}.\nEmail: ${email}\nMessage: ${message}`
     );
@@ -19,7 +19,7 @@ const Contact = () => {
 
   return (
     <> <br />
-    <h1 className='text-2xl text-center font-bold text-orange-500'>Explain Your Queery</h1>
+    <h1 className='text-2xl text-center font-bold text-orange-500'>Explain Your Query</h1>
     <div className="min-h-screen bg-orange-50 flex items-center justify-center p-6 rounded-xl">
       <div className="w-full max-w-2xl bg-white p-8 rounded-xl shadow-lg border border-orange-200">
         <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Contact Us</h2>

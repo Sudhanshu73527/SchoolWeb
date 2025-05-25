@@ -32,22 +32,22 @@ const toppers = [
     image: sunnyimg,
   },
   {
-    name: "Manish Tiwari",
+    name: "Varsha Kumari",
     role: "Class 2 Topper",
     image: topper1 ,
   },
   {
-    name: "Kumari",
+    name: "Shayam Kumar",
     role: "Class 5 Topper",
     image: topper2,
   },
   {
-    name: "Kumari",
+    name: "Rahul Kumar",
     role: "Class 5 Topper",
     image: topper3,
   },
   {
-    name: "Kumari",
+    name: "Anshu Kumari",
     role: "Class 5 Topper",
     image: topper4,
   },

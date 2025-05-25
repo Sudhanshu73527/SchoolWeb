@@ -79,7 +79,7 @@ export default function RecentActivities() {
                 </div>
               </div>
               <button className="text-orange-500 bg-slate-700 font-semibold text-center py-2 border-t border-gray-200 hover:underline cursor-pointer">
-                 +Read more 
+                 
               </button>
             </div>
           ))}

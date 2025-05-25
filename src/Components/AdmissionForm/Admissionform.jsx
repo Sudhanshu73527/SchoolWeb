@@ -30,7 +30,7 @@ const AdmissionForm = () => {
     `.trim();
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappNumber = "7352205506"; // Replace with your WhatsApp number (no +, include country code)
+    const whatsappNumber = "7739692245"; // Replace with your WhatsApp number (no +, include country code)
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
     window.open(whatsappLink, "_blank");

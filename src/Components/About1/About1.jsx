@@ -6,8 +6,8 @@ const About1 = () => {
     <section className="bg-white py-16 px-4 relative">
       {/* Top info row for Reg. No and UDISE No */}
       <div className="flex justify-between text-sm text-gray-600 px-6 mb-4 absolute top-4 left-0 right-0">
-        <span className="font-medium font-semibold text-orange-400 border rounded">UDISE No: 100111212011</span>
-        <span className="font-medium font-semibold text-orange-400 border rounded">Reg. No: 203101420221221152234</span>
+        <span className="font-medium font-semibold text-orange-400 ">UDISE No: 100111212011</span>
+        <span className="font-medium font-semibold text-orange-400 ">Reg. No: 203101420221221152234</span>
       </div>
 
       <br /> <br />
@@ -33,7 +33,7 @@ const About1 = () => {
             Shaping Futures Through Quality Education
           </h2>
           <p className="text-gray-700 text-lg">
-            Established in 2016, <strong className="text-orange-600">Sauhardh International School</strong> has grown into a center of
+            Established in 2015, <strong className="text-orange-600">Sauhardh International School</strong> has grown into a center of
             excellence, dedicated to nurturing young minds for a brighter
             tomorrow. Our mission is to empower students with knowledge,
             character, and confidence to face the challenges of the future. At

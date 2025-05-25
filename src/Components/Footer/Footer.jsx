@@ -19,11 +19,11 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3 text-orange-400">Quick Links</h3>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li><a href="#" className="hover:underline">Home</a></li>
-            <li><a href="#" className="hover:underline">About Us</a></li>
-            <li><a href="#" className="hover:underline">Admissions</a></li>
-            <li><a href="#" className="hover:underline">Gallery</a></li>
-            <li><a href="#" className="hover:underline">Contact</a></li>
+            <li><a href="/" className="hover:underline">Home</a></li>
+            <li><a href="/about/school" className="hover:underline">About Us</a></li>
+            <li><a href="/admission/form" className="hover:underline">Admissions</a></li>
+            <li><a href="about-gallery" className="hover:underline">Gallery</a></li>
+            <li><a href="/contact/Help" className="hover:underline">Contact</a></li>
           </ul>
         </div>
 
@@ -32,7 +32,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-3 text-orange-400">Contact Us</h3>
           <ul className="space-y-3 text-sm text-gray-300">
             <li className="flex items-start gap-2"><FaMapMarkerAlt className="mt-1" />Harinager, Belaspur-Bihar</li>
-            <li className="flex items-center gap-2"><FaPhoneAlt /> +91-7352205506</li>
+            <li className="flex items-center gap-2"><FaPhoneAlt /> +91-7739692245</li>
             <li className="flex items-center gap-2"><FaEnvelope />infosauhardhedu@gmail.com</li>
           </ul>
         </div>

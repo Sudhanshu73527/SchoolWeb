@@ -8,7 +8,7 @@ const Contact1 = () => {
     message: "",
   });
 
-  const whatsappNumber = "917352205506"; // Use your WhatsApp number in international format without '+' or dashes
+  const whatsappNumber = "917739692245"; // Use your WhatsApp number in international format without '+' or dashes
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));

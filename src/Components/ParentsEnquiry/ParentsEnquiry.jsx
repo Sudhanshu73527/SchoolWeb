@@ -29,7 +29,7 @@ const ParentsEnquiry = () => {
     `.trim();
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappNumber = "919999999999"; // Replace with your school's number
+    const whatsappNumber = "917739692245"; // Replace with your school's number
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
     window.open(whatsappLink, "_blank");
   };
