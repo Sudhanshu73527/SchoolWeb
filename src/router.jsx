@@ -27,6 +27,7 @@ import Viewcircular from './Components/ViewCircular/Viewcircular.jsx';
 import Rte from './Components/Rte/Rte.jsx';
 import Principal1 from './Components/Principal1/Principal1.jsx';
 import Recipt from './Components/Uploadrecipt/Recipt.jsx';
+import Parentteacher from './Components/Parentteacher/Parentteacher.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -132,6 +133,10 @@ const router = createBrowserRouter([
       {
         path:"/recipt/Mandatory Details",
         element:<Recipt/>
+      },
+      {
+        path:"/parent/Mandatory Details",
+        element:<Parentteacher/>
       }
       // Add more routes here later if needed
     ],

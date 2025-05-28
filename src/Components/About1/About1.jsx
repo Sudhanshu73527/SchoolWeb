@@ -36,7 +36,7 @@ const About1 = () => {
             Established in 2015, <strong className="text-orange-600">Sauhardh International School</strong> has grown into a center of
             excellence, dedicated to nurturing young minds for a brighter
             tomorrow. Our mission is to empower students with knowledge,
-            character, and confidence to face the challenges of the future. At
+            character and confidence to face the challenges of the future. At
             the heart of our philosophy lies a commitment to academic rigor
             balanced with holistic development. We believe that education goes
             beyond textbooks. Our campus buzzes with creativity, sportsmanship,

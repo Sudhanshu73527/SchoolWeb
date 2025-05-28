@@ -45,6 +45,7 @@ const NavbarMenu = [
       { title: "Student-Details", link: "/student/Mandatory Details" },
       { title: "Online-Fee-Payment", link: "/payment/Mandatory Details" },
       { title: "Upload-Fee-Receipt", link: "/recipt/Mandatory Details" },
+      { title: "Parent-teacher-association", link: "/parent/Mandatory Details" },
     ],
   },
   {

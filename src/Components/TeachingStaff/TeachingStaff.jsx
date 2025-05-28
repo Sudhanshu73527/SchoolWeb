@@ -1,15 +1,25 @@
 import React, { useState } from "react";
 import teacherPhoto from "../../assets/teacheravt1.png";
+import teacher1 from "../../assets/Shal1.png";
+import teacher2 from "../../assets/Shal2.png";
+import teacher3 from "../../assets/Shal3.png";
+import teacher4 from "../../assets/Shal10.png";
+import teacher5 from "../../assets/Shal5.png";
+import teacher6 from "../../assets/Shal6.png";
+import teacher7 from "../../assets/Shal10.png";
+
+
+
 
 const staffMembers = [
-  { name: "Mr. Deepak Kuamr", photo: teacherPhoto, subject: "Mathematics" },
-  { name: "Mr. Samulah Khan", photo: teacherPhoto, subject: "Science" },
-  { name: "Mr. Prakash Kumar", photo: teacherPhoto, subject: "English" },
-  { name: "Mr. LB.Mishra", photo: teacherPhoto, subject: "Hindi/Sanskrit" },
-  { name: "Mr. Santosh Gupta", photo: teacherPhoto, subject: "Science" },
-  { name: "Mr. Anand pal", photo: teacherPhoto, subject: "Computer" },
-  { name: "Mrs. Falak Khatun", photo: teacherPhoto, subject: "English" },
-  { name: "Mr Shalni Kumari", photo: teacherPhoto, subject: "Mathematics" },
+  { name: "Mr. Deepak Kuamr", photo: teacher1, subject: "Mathematics",desc:"deled" },
+  { name: "Mr. Samulah Khan", photo: teacher2, subject: "Science",desc:"deled" },
+  { name: "Mr. Anand Pal", photo: teacher3, subject: "Computer", desc:"deled"},
+  { name: "Mr. LB.Mishra", photo: teacher4, subject: "Hindi/Sanskrit",desc:"deled" },
+  { name: "Mr. Santosh Gupta", photo: teacher5, subject: "Science",desc:"deled" },
+  { name: "Mr. Anand pal", photo: teacher6, subject: "Computer",desc:"deled" },
+  { name: "Mrs. Falak Khatun", photo: teacher7, subject: "English",desc:"deled" },
+  { name: "Mr Shalni Kumari", photo: teacherPhoto, subject: "Mathematics",desc:"deled" },
   { name: "Mrs. Sonali Pandey ", photo: teacherPhoto, subject: "Hindi" },
   { name: "Mrs.Deepa Kumari", photo: teacherPhoto, subject: "English" },
   { name: "Mrs. Anuskha Kumari", photo: teacherPhoto, subject: "Science" },
@@ -47,6 +57,7 @@ const TeachingStaff = () => {
             />
             <h3 className="text-lg font-semibold text-gray-800">{staff.name}</h3>
             <p className="text-sm text-gray-600">{staff.subject}</p>
+            <p className="text-sm text-gray-600">{staff.desc}</p>
           </div>
         ))}
       </div>
