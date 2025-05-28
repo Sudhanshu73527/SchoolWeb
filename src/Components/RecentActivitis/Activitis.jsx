@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 import activity1 from "../../assets/art.jpeg";
 import activity2 from "../../assets/wha2.jpeg";
 import activity3 from "../../assets/wha3.jpeg";
@@ -46,11 +46,14 @@ const activities = [
 
 export default function RecentActivities() {
   return (
-    <div className="bg-gray-100 py-6 px-4"> <br />
+    <div className="bg-gray-100 py-6 px-4">
+      {" "}
+      <br />
       <div className="max-w-10xl mx-auto">
-        <div className="text-center bg-orange-500 text-white py-3 text-2xl font-semibold rounded-xl">
+        <div className="text-center bg-orange-500 text-white py-3 text-2xl font-semi-bold rounded-xl">
           🏆 RECENT ACTIVITIES
-        </div><br />
+        </div>
+        <br />
         <div className="grid gap-6 mt-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {activities.map((activity) => (
             <div
@@ -78,9 +81,16 @@ export default function RecentActivities() {
                   </div>
                 </div>
               </div>
+
               <button className="text-orange-500 bg-slate-700 font-semibold text-center py-2 border-t border-gray-200 hover:underline cursor-pointer">
-                 
+                <Link
+                  to="/recent-activity/ART-CURATED-SHOW"
+                  className="block w-full h-full text-inherit no-underline"
+                >
+                  Read More
+                </Link>
               </button>
+              
             </div>
           ))}
         </div>

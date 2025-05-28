@@ -28,6 +28,7 @@ import Rte from './Components/Rte/Rte.jsx';
 import Principal1 from './Components/Principal1/Principal1.jsx';
 import Recipt from './Components/Uploadrecipt/Recipt.jsx';
 import Parentteacher from './Components/Parentteacher/Parentteacher.jsx';
+import Artcurted from './Components/Artcurted/Artcurted.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -137,6 +138,10 @@ const router = createBrowserRouter([
       {
         path:"/parent/Mandatory Details",
         element:<Parentteacher/>
+      },
+      {
+        path: "/recent-activity/ART-CURATED-SHOW",
+        element :<Artcurted/>
       }
       // Add more routes here later if needed
     ],

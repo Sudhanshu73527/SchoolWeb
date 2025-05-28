@@ -2,30 +2,30 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import sunnyimg from "../../assets/avtar8.png"
-import avtar from "../../assets/avtar1.jpg"
-import avtarimg from "../../assets/avtar2.jpg"
+import sunnyimg from "../../assets/pra1.jpeg"
+import avtar from "../../assets/pra2.jpeg"
+import avtarimg from "../../assets/pra3.png"
 import avtarimg1 from "../../assets/avtar6.png"
 import avtarimg2 from "../../assets/avtar7.png"
 import avtarimg3 from "../../assets/avtar8.png"
 
 const testimonials = [
   {
-    name: "Aarav Mehta",
+    name: "Sujjet Kumar",
     role: "Parent's",
     image: sunnyimg,
     rating: 5,
     message: "The faculty here is very helpful and the environment",
   },
   {
-    name: "Mohan Sharma",
+    name: "Ranjan Sah",
     role: "Parent's",
     image: avtar,
     rating: 4,
     message: "My daughter has blossomed under the care of this.",
   },
   {
-    name: "Rahul Verma",
+    name: "Pradeep K Pandey",
     role: "Parent's",
     image: avtarimg,
     rating: 3,

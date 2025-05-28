@@ -35,9 +35,9 @@ const Principal1 = () => {
             both the mind and character. Our goal is to create an environment
             where students grow intellectually, emotionally, and ethically. We
             are proud of our dedicated teachers who guide each child with care
-            and commitment, and grateful to our parents for their unwavering
+            and commitment and grateful to our parents for their unwavering
             support. Together, let us continue to inspire, innovate, and ignite
-            a lifelong love for learning. Warm regards, Principal <strong>Mr.Sameer Rai</strong>
+            a lifelong love for learning. Warm regards, <strong>Mr.Sameer Rai</strong> Principal.
           </p>
         </div>
       </div>

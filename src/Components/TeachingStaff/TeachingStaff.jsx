@@ -7,17 +7,19 @@ import teacher4 from "../../assets/Shal10.png";
 import teacher5 from "../../assets/Shal5.png";
 import teacher6 from "../../assets/Shal6.png";
 import teacher7 from "../../assets/Shal10.png";
+import teacher8 from "../../assets/Shal7.png";
+
 
 
 
 
 const staffMembers = [
-  { name: "Mr. Deepak Kuamr", photo: teacher1, subject: "Mathematics",desc:"deled" },
-  { name: "Mr. Samulah Khan", photo: teacher2, subject: "Science",desc:"deled" },
-  { name: "Mr. Anand Pal", photo: teacher3, subject: "Computer", desc:"deled"},
-  { name: "Mr. LB.Mishra", photo: teacher4, subject: "Hindi/Sanskrit",desc:"deled" },
-  { name: "Mr. Santosh Gupta", photo: teacher5, subject: "Science",desc:"deled" },
-  { name: "Mr. Anand pal", photo: teacher6, subject: "Computer",desc:"deled" },
+  { name: "Mr. Deepak k Bhattacharya", photo: teacher8, subject: "Mathematics",desc:"(D.EL.Ed)" },
+  { name: "Mr. Santosh k Gupta", photo: teacher6, subject: "Science",desc:"(D.EL.Ed)" },
+  { name: "Md. Sami Ullah", photo: teacher5, subject: "SST", desc:"(B.Ed)"},
+  { name: "Mr. LB.Mishra", photo: teacher4, subject: "Hindi/Sanskrit",desc:"(Pracharya)" },
+  { name: "Mr. Anand pal", photo: teacher3, subject: "Computer",desc:"(ADCA)" },
+  { name: " Shalini Kumari", photo: teacher1, subject: "Science",desc:"(D.EL.ED)" },
   { name: "Mrs. Falak Khatun", photo: teacher7, subject: "English",desc:"deled" },
   { name: "Mr Shalni Kumari", photo: teacherPhoto, subject: "Mathematics",desc:"deled" },
   { name: "Mrs. Sonali Pandey ", photo: teacherPhoto, subject: "Hindi" },
@@ -53,7 +55,7 @@ const TeachingStaff = () => {
               src={staff.photo}
               alt={staff.name}
               onClick={() => setSelectedImage(staff.photo)}
-              className="w-32 h-32 object-cover rounded-xl mb-4 border-4 border-orange-100 cursor-pointer hover:scale-105 transition"
+              className="w-32 h-32 object-cover rounded-xl mb-4 border-4 border-white cursor-pointer hover:scale-105 transition"
             />
             <h3 className="text-lg font-semibold text-gray-800">{staff.name}</h3>
             <p className="text-sm text-gray-600">{staff.subject}</p>
