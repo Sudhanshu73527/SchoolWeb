@@ -65,104 +65,105 @@ const AdmissionForm = () => {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Full Name */}
-          <div>
-            <label className="block mb-1 font-medium">Full Name</label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              placeholder="Enter student's full name"
-              className="w-full border px-4 py-2 rounded"
-            />
-          </div>
+  {/* Full Name */}
+  <div className="mb-6">
+    <label className="block mb-2 font-medium">Full Name</label>
+    <input
+      type="text"
+      name="name"
+      value={formData.name}
+      onChange={handleChange}
+      required
+      placeholder="Enter student's full name"
+      className="w-full border px-6 py-3 rounded"
+    />
+  </div>
 
-          {/* Date of Birth */}
-          <div>
-            <label className="block mb-1 font-medium">Date of Birth</label>
-            <input
-              type="date"
-              name="dob"
-              value={formData.dob}
-              onChange={handleChange}
-              required
-              className="w-full border px-4 py-2 rounded"
-            />
-          </div>
+  {/* Date of Birth */}
+  <div className="mb-6">
+    <label className="block mb-2 font-medium">Date of Birth</label>
+    <input
+      type="date"
+      name="dob"
+      value={formData.dob}
+      onChange={handleChange}
+      required
+      className="w-full border px-6 py-3 rounded"
+    />
+  </div>
 
-          {/* Class */}
-          <div>
-            <label className="block mb-1 font-medium">Class Applying For</label>
-            <select
-              name="studentClass"
-              value={formData.studentClass}
-              onChange={handleChange}
-              required
-              className="w-full border px-4 py-2 rounded"
-            >
-              <option value="">Select Class</option>
-              {["Nursery", "LKG", "UKG", ...Array.from({ length: 10 }, (_, i) => `Class ${i + 1}`)].map((cls, idx) => (
-                <option key={idx} value={cls}>{cls}</option>
-              ))}
-            </select>
-          </div>
+  {/* Class */}
+  <div className="mb-6">
+    <label className="block mb-2 font-medium">Class Applying For</label>
+    <select
+      name="studentClass"
+      value={formData.studentClass}
+      onChange={handleChange}
+      required
+      className="w-full border px-6 py-3 rounded"
+    >
+      <option value="">Select Class</option>
+      {["Nursery", "LKG", "UKG", ...Array.from({ length: 10 }, (_, i) => `Class ${i + 1}`)].map((cls, idx) => (
+        <option key={idx} value={cls}>{cls}</option>
+      ))}
+    </select>
+  </div>
 
-          {/* Email */}
-          <div>
-            <label className="block mb-1 font-medium">Parent's Email</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              placeholder="Enter email address"
-              className="w-full border px-4 py-2 rounded"
-            />
-          </div>
+  {/* Email */}
+  <div className="mb-6">
+    <label className="block mb-2 font-medium">Parent's Email</label>
+    <input
+      type="email"
+      name="email"
+      value={formData.email}
+      onChange={handleChange}
+      required
+      placeholder="Enter email address"
+      className="w-full border px-6 py-3 rounded"
+    />
+  </div>
 
-          {/* Phone */}
-          <div>
-            <label className="block mb-1 font-medium">Phone Number</label>
-            <input
-              type="tel"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-              placeholder="Enter phone number"
-              className="w-full border px-4 py-2 rounded"
-            />
-          </div>
+  {/* Phone */}
+  <div className="mb-6">
+    <label className="block mb-2 font-medium">Phone Number</label>
+    <input
+      type="tel"
+      name="phone"
+      value={formData.phone}
+      onChange={handleChange}
+      required
+      placeholder="Enter phone number"
+      className="w-full border px-6 py-3 rounded"
+    />
+  </div>
 
-          {/* Address */}
-          <div>
-            <label className="block mb-1 font-medium">Address</label>
-            <textarea
-              name="address"
-              rows="3"
-              value={formData.address}
-              onChange={handleChange}
-              required
-              placeholder="Enter your full address"
-              className="w-full border px-4 py-2 rounded"
-            />
-          </div>
+  {/* Address */}
+  <div className="mb-6">
+    <label className="block mb-2 font-medium">Address</label>
+    <textarea
+      name="address"
+      rows="3"
+      value={formData.address}
+      onChange={handleChange}
+      required
+      placeholder="Enter your full address"
+      className="w-full border px-6 py-3 rounded"
+    />
+  </div>
 
-          {/* Submit */}
-          <div className="text-center">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              type="submit"
-              className="bg-orange-500 text-white px-6 py-3 rounded font-semi-bold hover:bg-orange-600 transition hover:bg-white hover:text-orange-500"
-            >
-              Submit Admission Form 
-            </motion.button>
-          </div>
-        </form>
+  {/* Submit */}
+  <div className="text-center mt-6">
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      type="submit"
+      className="bg-orange-500 text-white px-8 py-3 rounded font-semi-bold hover:bg-orange-600 transition hover:bg-white hover:text-orange-500"
+    >
+      Submit Admission Form
+    </motion.button>
+  </div>
+</form>
+
       </motion.div>
     </div>
   );

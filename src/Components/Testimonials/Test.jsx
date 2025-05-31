@@ -11,7 +11,7 @@ import avtarimg3 from "../../assets/avtar8.png"
 
 const testimonials = [
   {
-    name: "Sujjet Kumar",
+    name: "Sujit Kumar",
     role: "Parent's",
     image: sunnyimg,
     rating: 5,
@@ -28,7 +28,7 @@ const testimonials = [
     name: "Pradeep K Pandey",
     role: "Parent's",
     image: avtarimg,
-    rating: 3,
+    rating: 5,
     message: "Great infrastructure and administration.",
   },
   {

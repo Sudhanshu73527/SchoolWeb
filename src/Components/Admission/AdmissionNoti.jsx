@@ -6,7 +6,7 @@ const notifications = [
     description: "Admissions are now open for Nursery to Grade 10. Limited seats available!",
     date: "May 18, 2025",
     type: "info",
-  },
+  } ,
   {
     title: "Entrance Exam Schedule Released",
     description: "Not Released",

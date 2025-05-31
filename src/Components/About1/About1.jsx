@@ -5,10 +5,14 @@ const About1 = () => {
   return (
     <section className="bg-white py-16 px-4 relative">
       {/* Top info row for Reg. No and UDISE No */}
-      <div className="flex justify-between text-sm text-gray-600 px-6 mb-4 absolute top-4 left-0 right-0">
-        <span className="font-medium font-semibold text-orange-400 ">UDISE No: 100111212011</span>
-        <span className="font-medium font-semibold text-orange-400 ">Reg. No: 203101420221221152234</span>
-      </div>
+      <div className="flex flex-col sm:flex-row justify-between text-sm text-gray-600 px-6 mb-4 absolute top-4 left-0 right-0">
+  <span className="font-medium font-semibold text-orange-400 sm:mr-4">
+    Reg. No: 203101420221221152234
+  </span>
+  <span className="font-medium font-semibold text-orange-400">
+    UDISE No: 100111212011
+  </span>
+</div>
 
       <br /> <br />
       <h1 className="text-4xl md:text-5xl font-bold text-slate-600 text-center mb-10 relative">

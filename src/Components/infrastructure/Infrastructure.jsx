@@ -10,6 +10,15 @@ import labImg from "../../assets/comp1.jpeg";
 import scilab from "../../assets/science2.jpeg"
 import ramp from "../../assets/wha5.jpeg"
 import cwsn from "../../assets/wha7.jpeg"
+import playground from "../../assets/bg6.jpeg"
+import building from "../../assets/bg4.jpeg"
+import coridor from "../../assets/bg8.jpeg"
+import classs from "../../assets/sg9.jpeg"
+import roof from "../../assets/sg2.jpeg"
+import junior from "../../assets/sg7.jpeg"
+import metting from "../../assets/sunny3.jpeg"
+import teacher from "../../assets/school7.jpeg"
+import prayer from "../../assets/school6.jpeg"
 const infrastructureItems = [
   {
     title: "Main School Building (2000 sqft)",
@@ -64,6 +73,57 @@ const infrastructureItems = [
     image: cwsn,
     description:
       "Design a child-friendly, accessible bathroom for CWSN that includes grab bars, non-slip flooring,",
+  },
+  {
+    title: "PlayGround",
+    image: playground,
+    description:
+      "Our vibrant playground offers a safe and joyful space where children can play, learn, and grow"
+  },{
+    title: "School Building ",
+    image: building,
+    description:
+    "Our main building stands as the heart of the campus — a blend of modern infrastructure and thoughtful design."
+  },{
+    title: "Corridor",
+    image: coridor,
+    description:
+    "Bright, spacious, and welcoming — our school corridors connect more than just classrooms"
+  },
+  ,{
+    title: "Junior PlayGround ",
+    image: classs,
+    description:
+    "A joyful space where our youngest learners laugh, play, and grow through fun-filled adventures every day."
+  },,{
+    title: "Roof View",
+    image: roof,
+    description:
+    "A peaceful vantage point offering a panoramic view of the campus, where inspiration meets the horizon."
+
+
+  },,{
+    title: "Junior Classroom Area",
+    image: junior,
+    description:
+    "A vibrant and nurturing space filled with colors, creativity, and the joyful energy of young learners."
+  },
+  ,{
+    title: "Principal's Metting",
+    image: metting,
+    description:
+    "A vibrant and nurturing space filled with colors, creativity, and the joyful energy of young learners."
+  },
+  {
+    title: "Teacher's Metting",
+    image: teacher,
+    description:
+    "A vibrant and nurturing space filled with colors, creativity, and the joyful energy of young learners."
+  },{
+    title: "Morning School Prayer",
+    image: prayer,
+    description:
+    "A vibrant and nurturing space filled with colors, creativity, and the joyful energy of young learners."
   },
 ];
 
