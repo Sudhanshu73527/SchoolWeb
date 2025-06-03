@@ -1,9 +1,12 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import activity1 from "../../assets/art.jpeg";
 import activity2 from "../../assets/wha2.jpeg";
 import activity3 from "../../assets/wha3.jpeg";
 import activity4 from "../../assets/sip.png";
+
+// Utility to create a slug from the title
+const createSlug = (title) => title.toLowerCase().replace(/\s+/g, "-");
 
 const activities = [
   {
@@ -13,7 +16,7 @@ const activities = [
     month: "MAR",
     year: "2025",
     title: "ART CURATED SHOW",
-    description: "Students of Sauhardh ...",
+    description: "Students of Sauhardh displayed artistic excellence in an inspiring showcase.",
   },
   {
     id: 2,
@@ -22,7 +25,7 @@ const activities = [
     month: "MAR",
     year: "2025",
     title: "Tree Plantation",
-    description: "Sauhardh international School...",
+    description: "Sauhardh International School promoted eco-awareness through planting drives.",
   },
   {
     id: 3,
@@ -31,7 +34,7 @@ const activities = [
     month: "FEB",
     year: "2025",
     title: "Annual Athletics",
-    description: "Students of Sauhardh ...",
+    description: "Students participated in exciting and competitive sports events.",
   },
   {
     id: 4,
@@ -39,58 +42,52 @@ const activities = [
     day: "30",
     month: "JAN",
     year: "2025",
-    title: "Inter house Competition's",
-    description: "Students of Sauhardh...",
+    title: "Inter House Competition's",
+    description: "Showcasing talent and teamwork across houses in various categories.",
   },
 ];
 
 export default function RecentActivities() {
   return (
-    <div className="bg-gray-100 py-6 px-4">
-      {" "}
-      <br />
+    <div className="bg-gradient-to-tr from-orange-50 to-white py-12 px-4">
       <div className="max-w-10xl mx-auto">
-        <div className="text-center bg-orange-500 text-white py-3 text-2xl font-semi-bold rounded-xl">
+        <h2 className="text-3xl font-bold text-center text-orange-600 mb-10">
           🏆 RECENT ACTIVITIES
-        </div>
-        <br />
-        <div className="grid gap-6 mt-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        </h2> <br />
+
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {activities.map((activity) => (
             <div
               key={activity.id}
-              className="bg-white rounded shadow flex flex-col overflow-hidden"
+              className="bg-white rounded-2xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2 duration-300"
             >
               <img
                 src={activity.image}
                 alt={activity.title}
-                className="w-full h-48 object-cover border border-orange-300 text-center"
+                className="w-full h-48 object-cover"
               />
-              <div className="flex items-start px-4 py-2 space-x-3 border border-orange-600">
-                <div className="bg-orange-500 text-white text-center px-3 py-2 font-bold rounded-sm border">
-                  <div className="text-xl">{activity.day}</div>
-                  <div className="text-xs">
-                    {activity.month} {activity.year}
-                  </div>
-                </div>
-                <div>
-                  <div className="font-bold text-sm truncate w-40 text-center">
-                    {activity.title}
-                  </div>
-                  <div className="text-sm text-gray-600 mt-1 truncate text-center">
-                    {activity.description}
-                  </div>
-                </div>
-              </div>
 
-              <button className="text-orange-500 bg-slate-700 font-semibold text-center py-2 border-t border-gray-200 hover:underline cursor-pointer">
+              <div className="p-4 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="bg-orange-500 text-white font-bold px-3 py-2 rounded text-center">
+                    <div className="text-xl leading-none">{activity.day}</div>
+                    <div className="text-xs uppercase">
+                      {activity.month} {activity.year}
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-800">{activity.title}</h3>
+                    <p className="text-sm text-gray-600 line-clamp-2">{activity.description}</p>
+                  </div>
+                </div>
+
                 <Link
-                  to="/recent-activity/ART-CURATED-SHOW"
-                  className="block w-full h-full text-inherit no-underline"
+                  to={`/recent-activity/${createSlug(activity.title)}`}
+                  className="block w-full text-center mt-3 bg-orange-600 hover:bg-orange-700 text-white py-2 rounded-md font-medium transition duration-300"
                 >
                   Read More
                 </Link>
-              </button>
-              
+              </div>
             </div>
           ))}
         </div>

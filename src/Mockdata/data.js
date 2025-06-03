@@ -17,7 +17,7 @@ const NavbarMenu = [
         link: "/about-gallery",
       },
       { title: "Job-Vacancy", link: "/about/mission" },
-      { title: "RTE", link: "/about/rte" },
+      { title: "RTE", link: "/about/rte"},
     ],
   },
   {
