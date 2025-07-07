@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../../assets/bg3.jpeg"; // Replace with your actual image path
+import aboutImage from "../../assets/bg4.jpeg"; // Replace with your actual image path
 
 const About1 = () => {
   return (
@@ -12,24 +12,24 @@ const About1 = () => {
   <span className="font-medium font-semibold text-orange-400">
     UDISE No: 100111212011
   </span>
-</div>
+</div> <br />
 
       <br /> <br />
-      <h1 className="text-4xl md:text-5xl font-bold text-slate-600 text-center mb-10 relative">
-        <span className="inline-block border-b-4 border-slate-400 pb-2">
-          About School
-        </span>
-      </h1>
+     <h1 className="text-4xl md:text-5xl font-bold text-slate-600 text-center mb-10 relative">
+  <span className="inline-block pb-2">
+    About School
+  </span>
+</h1> <br />
 
       <div className="container mx-auto rounded-xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-8">
         {/* Left Image */}
-        <div className="w-full md:w-1/2 flex justify-center">
-          <img
-            src={aboutImage}
-            alt="About our school"
-            className="rounded-lg shadow-md w-3/4 md:w-[300px] lg:w-[400px] object-cover w-full max-w-xs border border-orange-200"
-          />
-        </div>
+      <div className="w-full md:w-1/2 flex justify-center">
+  <img
+    src={aboutImage}
+    alt="About our school"
+    className="rounded-lg shadow-md w-4/5 md:w-[360px] lg:w-[480px] object-cover max-w-sm border border-orange-200"
+  />
+</div>
 
         {/* Right Text */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-5">
@@ -45,11 +45,6 @@ const About1 = () => {
             balanced with holistic development. We believe that education goes
             beyond textbooks. Our campus buzzes with creativity, sportsmanship,
             leadership activities, and innovation.
-          </p>
-          <p className="text-gray-600 text-lg">
-            With state-of-the-art facilities, passionate educators, and a strong
-            community, we aim to create a foundation for lifelong learning and
-            success.
           </p>
         </div>
       </div>

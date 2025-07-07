@@ -27,8 +27,8 @@ const Home = () => {
     <Activitis/>
     <Test/>
     <Sectiontabs/>
-    <Contact/>
-    <Topper/>
+    <Topper/> <br />
+        <Contact/>
     <Footer/>
     
       {/* <Hero /> */}

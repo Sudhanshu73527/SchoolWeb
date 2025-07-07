@@ -4,7 +4,6 @@ import aboutImage from "../../assets/principal.png"; // Replace with your actual
 const Principal1 = () => {
   return (
     <section className="bg-white py-16 px-4">
-      {" "}
       <br /> <br />
       <h1 className="text-4xl md:text-5xl font-bold text-slate-600 text-center mb-10 relative">
         <span className="">Principal's Message</span>
@@ -15,14 +14,9 @@ const Principal1 = () => {
           <img
             src={aboutImage}
             alt="About our school"
-            className="rounded-lg shadow-md w-3/4 md:w-[300px] lg:w-[280px] object-cover w-full max-w-xs border border-orange-200"
+            className="rounded-lg w-3/4 md:w-[300px] lg:w-[280px] object-cover w-full max-w-xs"
           />
         </div>
-        {/* <div className="max-w-sm mx-auto mt-20 p-6 bg-orange-500 rounded text-white cursor-pointer">
-          <p className="text-2xl font-semibold tracking-wide whitespace-nowrap overflow-hidden text-ellipsis hover:bg-white hover:text-orange-500">
-            Mr. Sameer Rai
-          </p>
-        </div> */}
 
         {/* Right Text */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-5">
@@ -37,7 +31,7 @@ const Principal1 = () => {
             are proud of our dedicated teachers who guide each child with care
             and commitment and grateful to our parents for their unwavering
             support. Together, let us continue to inspire, innovate, and ignite
-            a lifelong love for learning. Warm regards, <strong>Mr.Sameer Rai</strong> Principal.
+            a lifelong love for learning. Warm regards, <strong>Mr. Sameer Rai</strong> Principal.
           </p>
         </div>
       </div>

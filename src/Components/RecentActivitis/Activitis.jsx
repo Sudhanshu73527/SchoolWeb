@@ -50,8 +50,8 @@ const activities = [
 export default function RecentActivities() {
   return (
     <div className="bg-gradient-to-tr from-orange-50 to-white py-12 px-4">
-      <div className="max-w-10xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-orange-600 mb-10">
+      <div className="max-w-10xl mx-auto"> <br />
+        <h2 className="text-3xl font-bold text-center text-slate-600 mb-10">
           🏆 RECENT ACTIVITIES
         </h2> <br />
 

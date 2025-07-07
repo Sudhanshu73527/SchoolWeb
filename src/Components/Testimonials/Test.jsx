@@ -122,7 +122,7 @@ const Test = () => {
   return (
     <div className="bg-gradient-to-br from-orange-50 to-white py-12 px-4">
       <h2 className="text-3xl font-bold text-center text-orange-600 mb-10"> <br />
-        🗣️ What Parents Say About Us
+         What Parents Say About Us
       </h2> <br />
 
       <div className="max-w-10xl mx-auto">

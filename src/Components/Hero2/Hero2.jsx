@@ -80,9 +80,7 @@ const Hero2 = () => {
             </p>
 
             <div className="pt-6">
-              <button className="px-6 py-3 bg-orange-500 text-white font-semi-bold rounded shadow hover:bg-white hover:text-orange-500 transition duration-300">
-                Explore More
-              </button>
+            
             </div>
           </div>
         </div>

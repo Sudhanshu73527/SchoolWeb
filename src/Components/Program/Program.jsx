@@ -31,10 +31,10 @@ const Program = () => {
 
   return (
     <div className="mt-16 md:mt-24 py-12 px-4 max-w-15xl mx-auto">
-      <br />
+      <br /> <br />
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-orange-500">
         Our School Events
-      </h2>
+      </h2> <br />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
         {programData.map((program, index) => (

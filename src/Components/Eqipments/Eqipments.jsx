@@ -59,7 +59,7 @@ const Eqipments = () => {
 ))}
 
         </div>
-      </div>
+      </div> <br />
     </div>
   );
 };
