@@ -10,26 +10,24 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-orange-100 my-6">
-        {" "}
-        {/* Removed shadow-md here */}
-        <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center py-2 sm:py-3 px-2 sm:px-4">
+      <nav className="my-2">
+        <div className="w-full max-w-screen-xl mx-auto flex justify-between items-center py-1 sm:py-2 px-2 sm:px-4">
           {/* Logo and School Name */}
           <div className="flex items-center gap-3">
             <Link to={"/"}>
               <img
                 src={logo}
                 alt="School Logo"
-                className="w-8 h-8 sm:w-14 sm:h-14 lg:w-20 lg:h-20 object-contain"
+                className="w-6 h-6 sm:w-10 sm:h-10 lg:w-14 lg:h-14 object-contain"
               />
             </Link>
             <div className="leading-tight">
               <Link to={"/"}>
-                <p className="text-sm sm:text-lg font-bold uppercase text-orange-600 whitespace-nowrap">
-                  Sauhardh International
+                <p className="text-xs sm:text-sm font-bold uppercase text-orange-600 whitespace-nowrap">
+                  Sauhardh International School
                 </p>
-                <p className="text-sm sm:text-lg font-bold uppercase text-black whitespace-nowrap">
-                  School
+                <p className="text-xs sm:text-sm font-semi-bold uppercase text-black whitespace-nowrap">
+                  making harinager litrate
                 </p>
               </Link>
             </div>

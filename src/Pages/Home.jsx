@@ -15,10 +15,12 @@ import Footer from '../Components/Footer/Footer.jsx';
 import Sectiontabs from '../Components/Sectiontabs/Sectiontabs.jsx';
 import Contact from '../Components/Contact/Contact.jsx';
 import Topper from '../Components/Topper/Topper.jsx';
+import Hero from '../Components/Hero/Hero.jsx';
 const Home = () => {
   return (
     <>
     {/* <Testing/> */}
+    {/* <Hero/> */}
     <Hero2/>
     <Eqipments/>
     <About1/>

@@ -55,7 +55,7 @@ const EnquiryForm = () => {
           />
           <ul className="space-y-2 text-gray-700 text-sm">
             <li className="flex items-center gap-2">
-              <FaPhoneAlt className="text-purple-600" />
+              <FaPhoneAlt className="text-purple-600" /> 7352205506
             </li>
             <li className="flex items-center gap-2">
               <FaEnvelope className="text-purple-600" /> info@yourschool.com

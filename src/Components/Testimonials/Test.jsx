@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaQuoteLeft } from "react-icons/fa";
+
 import sunnyimg from "../../assets/pra1.jpeg";
 import avtar from "../../assets/pra2.jpeg";
 import avtarimg from "../../assets/pra3.png";
@@ -120,22 +122,23 @@ const StarRating = ({ rating }) => {
 
 const Test = () => {
   return (
-    <div className="bg-gradient-to-br from-orange-50 to-white py-12 px-4">
-      <h2 className="text-3xl font-bold text-center text-orange-600 mb-10"> <br />
-         What Parents Say About Us
-      </h2> <br />
+    <div className="bg-gradient-to-br from-orange-50 to-white py-16 px-4">
+      <h2 className="text-3xl font-bold text-center text-orange-600 mb-12">
+        What Parents Say About Us
+      </h2>
 
-      <div className="max-w-10xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <Slider {...settings}>
           {testimonials.map((t, index) => (
             <div key={index} className="px-4">
-              <div className="bg-white rounded-xl shadow-md p-6 h-full flex flex-col items-center text-center hover:shadow-lg transition-all duration-300 border border-orange-100">
+              <div className="bg-white/70 backdrop-blur-md rounded-2xl p-6 h-full flex flex-col items-center text-center transition-all duration-300 hover:scale-105 hover:shadow-xl border border-orange-100">
                 <img
                   src={t.image}
                   alt={t.name}
-                  className="w-24 h-24 rounded-full object-cover mb-4 border-2 border-orange-400"
+                  className="w-24 h-24 rounded-full object-cover mb-4 shadow-md border-2 border-orange-400"
                 />
-                <p className="text-gray-600 italic mb-4 text-sm px-2 line-clamp-4">
+                <FaQuoteLeft className="text-orange-400 text-2xl mb-3" />
+                <p className="text-gray-700 text-sm sm:text-base italic mb-4 px-3 line-clamp-4">
                   “{t.message}”
                 </p>
                 <StarRating rating={t.rating} />

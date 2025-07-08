@@ -51,9 +51,9 @@ export default function RecentActivities() {
   return (
     <div className="bg-gradient-to-tr from-orange-50 to-white py-12 px-4">
       <div className="max-w-10xl mx-auto"> <br />
-        <h2 className="text-3xl font-bold text-center text-slate-600 mb-10">
-          🏆 RECENT ACTIVITIES
-        </h2> <br />
+        <h2 className="text-3xl font-bold text-center text-slate-600 mb-10  overflow-x-auto">
+RECENT ACTIVITIES
+</h2><br />
 
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {activities.map((activity) => (
