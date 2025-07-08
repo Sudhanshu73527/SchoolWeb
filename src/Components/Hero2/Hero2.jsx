@@ -80,7 +80,7 @@ const Hero2 = () => {
             </p>
 
             <div className="pt-6">
-            
+              {/* Add buttons or links here if needed */}
             </div>
           </div>
         </div>

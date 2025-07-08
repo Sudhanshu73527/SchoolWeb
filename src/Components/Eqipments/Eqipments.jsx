@@ -6,7 +6,7 @@ const EqipmentsData = [
   {
     id: 1,
     title: "Education Equipments",
-    desc: "Practical solutions that turn vision into achievement.",
+    desc: "Practical solutions that turn vision into achievement.Empowering institutions with innovation and reliability.",
     icons: <GiGraduateCap />,
     delay: 0.3,
   },
@@ -20,7 +20,7 @@ const EqipmentsData = [
   {
     id: 3,
     title: "Digital Resources",
-    desc: "Supporting academic excellence with reliable educational solutions.",
+    desc: "Empowering schools and students to thrive in a digital era.Where innovation meets education for a brighter.",
     icons: <GiGraduateCap />,
     delay: 0.9,
   },
@@ -28,7 +28,7 @@ const EqipmentsData = [
 
 const Eqipments = () => {
   return (
-    <div className="bg-orange-50 py-24"> <br />
+    <div className="bg-white py-24"> <br />
       <div className="container">
         <div className="flex flex-col items-center sm:grid sm:grid-cols-2 md:grid-cols-4 gap-6 font-playfair">
           {/* Heading */}

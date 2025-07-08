@@ -33,7 +33,7 @@ const EnquiryForm = () => {
   return (
     <section className="bg-purple-50 py-20 px-4">
       <div className="max-w-3xl mx-auto text-center mb-10">
-        <h2 className="text-5xl font-bold text-purple-700 mb-2">Enquire Now</h2>
+        <h2 className="text-5xl font-bold text-orange-600 mb-2">Enquire Now</h2>
         <p className="text-gray-600">
           Have questions? Fill in your details and we’ll get in <span text-purple-700>touch shortly</span>.
         </p>
@@ -124,7 +124,7 @@ const EnquiryForm = () => {
 
           <button
             type="submit"
-            className="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition duration-300"
+            className="w-full bg-orange-600 text-white py-3 rounded-lg font-semibold hover:bg-green-500 transition duration-300"
           >
             Submit Enquiry
           </button>
