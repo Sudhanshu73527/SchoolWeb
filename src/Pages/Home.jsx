@@ -31,7 +31,7 @@ const Home = () => {
     <Sectiontabs/>
     <Topper/> <br />
         <Contact/>
-    <Footer/>
+    {/* <Footer/> */}
     
       {/* <Hero /> */}
        {/* */}
@@ -40,6 +40,7 @@ const Home = () => {
       {/* <Campus />  */}
       {/*  */}
       {/* <Contact /> */}
+      
     </>
   );
 };

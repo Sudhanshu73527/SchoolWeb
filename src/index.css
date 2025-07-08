@@ -6,12 +6,21 @@
 
 /* Global Styles */
 * {
-    font-family: "Playfair", serif;
-    /* Optional global reset */
-    /* margin: 0;
-    padding: 0;
-    box-sizing: border-box; */
+  font-family: "Playfair", serif;
+  margin: 0;
+  padding: 2; /* Correct: removes unwanted space */
+  box-sizing: border-box;
 }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: white;
+}
+
 
 /* Keyframe animations */
 @keyframes blink {

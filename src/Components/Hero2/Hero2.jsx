@@ -22,7 +22,6 @@ const Hero2 = () => {
       setIndex((prev) => (prev + 1) % backgroundImages.length);
       setKey((prev) => prev + 1);
     }, 5000);
-
     return () => clearInterval(timer);
   }, []);
 
@@ -36,51 +35,50 @@ const Hero2 = () => {
     );
 
   return (
-    <>
-      {/* <marquee className="bg-white text-orange-500 font-medium py-1">
+    <section className="relative w-full min-h-[650px] flex flex-col justify-start items-center overflow-hidden m-0 p-0">
+      {/* Marquee announcement */}
+      <marquee className="w-full bg-white text-orange-500 font-medium py-2 z-20">
         🎓 Admissions Open for 2025–2026! Limited seats available — Enroll now and secure your child’s future!
       </marquee> */}
 
-      <div className="relative w-full h-[100vh] flex items-center overflow-hidden -mt-[1px]">
-        {/* Background Image */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={index}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-            className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
-            style={{ backgroundImage: `url(${backgroundImages[index]})` }}
-          />
-        </AnimatePresence>
+      {/* Background image */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={index}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+          className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+          style={{ backgroundImage: `url(${backgroundImages[index]})` }}
+        />
+      </AnimatePresence>
 
-        {/* Overlay */}
-        <div className="absolute top-0 left-0 w-full h-full bg-white/20 z-0" />
+      {/* Overlay */}
+      <div className="absolute top-0 left-0 w-full h-full bg-white/20 z-0" />
 
-        {/* Content */}
-        <div className="relative z-10 container px-4 mx-auto">
-          <div className="max-w-2xl pt-12 pb-16 space-y-6 text-center md:text-left">
-            <AnimatePresence mode="wait">
-              <motion.h1
-                key={key}
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -50 }}
-                transition={{ duration: 0.5 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed text-black"
-              >
-                {renderThought(thoughts[index % thoughts.length])}
-              </motion.h1>
-            </AnimatePresence>
+      {/* Hero content */}
+      <div className="relative z-10 w-full max-w-7xl px-4 py-20 text-center md:text-left">
+        <div className="max-w-2xl mx-auto space-y-6">
+          <AnimatePresence mode="wait">
+            <motion.h1
+              key={key}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.5 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-bold leading-snug text-black"
+            >
+              {renderThought(thoughts[index % thoughts.length])}
+            </motion.h1>
+          </AnimatePresence>
 
-            <p className="text-black text-lg font-light max-w-xl">
-              "Education is the most powerful weapon which you can use to change the world. In learning you will teach, and in teaching you will learn."
-            </p>
-          </div>
+          <p className="text-black text-lg font-light max-w-xl mx-auto">
+            "Education is the most powerful weapon which you can use to change the world. In learning you will teach, and in teaching you will learn."
+          </p>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
