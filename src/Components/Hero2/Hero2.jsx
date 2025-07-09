@@ -37,9 +37,9 @@ const Hero2 = () => {
   return (
     <section className="relative w-full min-h-[650px] flex flex-col justify-start items-center overflow-hidden m-0 p-0">
       {/* Marquee announcement */}
-      <marquee className="w-full bg-white text-orange-500 font-medium py-2 z-20">
+      {/* <marquee className="w-full bg-white text-orange-500 font-medium py-2 z-20">
         🎓 Admissions Open for 2025–2026! Limited seats available — Enroll now and secure your child’s future!
-      </marquee> */}
+      </marquee> */} 
 
       {/* Background image */}
       <AnimatePresence mode="wait">

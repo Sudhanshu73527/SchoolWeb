@@ -65,7 +65,7 @@ const sectionData = [
     bg: "from-purple-100 to-indigo-50",
     reverse: true,
   },
-];
+]; 
 
 const SectionTabs = () => {
   const [activeTab, setActiveTab] = useState(sectionData[0].key);
