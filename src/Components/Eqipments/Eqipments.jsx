@@ -28,12 +28,12 @@ const EqipmentsData = [
 
 const Eqipments = () => {
   return (
-    <div className="bg-white py-24"> <br />
+    <div className="bg-orange-600 py-24"> <br />
       <div className="container">
         <div className="flex flex-col items-center sm:grid sm:grid-cols-2 md:grid-cols-4 gap-6 font-playfair">
           {/* Heading */}
           <div className="space-y-4 p-6 sm:col-span-2 md:col-span-1 text-center sm:text-left">
-            <h1 className="text-3xl md:text-4xl font-bold">
+            <h1 className="text-3xl md:text-4xl font-bold text-white">
               Unlock Your Learning Potential
             </h1>
             <p className="text-slate-700">

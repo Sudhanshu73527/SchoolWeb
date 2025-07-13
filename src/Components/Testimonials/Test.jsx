@@ -122,10 +122,10 @@ const StarRating = ({ rating }) => {
 
 const Test = () => {
   return (
-    <div className="bg-gradient-to-br from-orange-50 to-white py-16 px-4">
+    <div className="bg-gradient-to-br from-orange-50 to-white px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20">
       <h2 className="text-3xl font-bold text-center text-orange-600 mb-12">
         What Parents Say About Us
-      </h2>
+      </h2> <br />
 
       <div className="max-w-7xl mx-auto">
         <Slider {...settings}>

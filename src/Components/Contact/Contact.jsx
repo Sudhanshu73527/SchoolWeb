@@ -24,7 +24,9 @@ const EnquiryForm = () => {
     e.preventDefault();
     const { name, phone, email, message } = formData;
 
-    const whatsappMessage = `Hello,%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Email:* ${email || 'N/A'}%0A*Message:* ${message}`;
+    const whatsappMessage = `Hello,%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Email:* ${
+      email || "N/A"
+    }%0A*Message:* ${message}`;
     const whatsappURL = `https://wa.me/919523464653?text=${whatsappMessage}`;
 
     window.open(whatsappURL, "_blank");
@@ -32,12 +34,15 @@ const EnquiryForm = () => {
 
   return (
     <section className="bg-purple-50 py-20 px-4">
-      <div className="max-w-3xl mx-auto text-center mb-10">
-        <h2 className="text-5xl font-bold text-orange-600 mb-2">Enquire Now</h2>
-        <p className="text-gray-600">
-          Have questions? Fill in your details and we’ll get in <span text-purple-700>touch shortly</span>.
+      <div className="max-w-3xl mx-auto text-center mb-10 px-4 sm:px-6">
+        <h2 className="text-4xl sm:text-5xl font-bold text-orange-600 mb-4">
+          Enquire Now
+        </h2>
+        <p className="text-gray-600 text-base sm:text-lg">
+          Have questions? Fill in your details and we’ll get in{" "}
+          <span className="text-orange-600 font-medium">touch shortly</span>.
         </p>
-      </div>
+      </div> <br />
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left Image + Contact (Hidden on Mobile) */}
@@ -73,7 +78,9 @@ const EnquiryForm = () => {
           className="bg-white p-8 rounded-2xl shadow-lg space-y-6 w-full"
         >
           <div>
-            <label className="block text-gray-700 font-medium mb-1">Full Name</label>
+            <label className="block text-gray-700 font-medium mb-1">
+              Full Name
+            </label>
             <input
               type="text"
               name="name"
@@ -86,7 +93,9 @@ const EnquiryForm = () => {
           </div>
 
           <div>
-            <label className="block text-gray-700 font-medium mb-1">Phone Number</label>
+            <label className="block text-gray-700 font-medium mb-1">
+              Phone Number
+            </label>
             <input
               type="tel"
               name="phone"
@@ -99,7 +108,9 @@ const EnquiryForm = () => {
           </div>
 
           <div>
-            <label className="block text-gray-700 font-medium mb-1">Email Address</label>
+            <label className="block text-gray-700 font-medium mb-1">
+              Email Address
+            </label>
             <input
               type="email"
               name="email"
@@ -111,7 +122,9 @@ const EnquiryForm = () => {
           </div>
 
           <div>
-            <label className="block text-gray-700 font-medium mb-1">Message</label>
+            <label className="block text-gray-700 font-medium mb-1">
+              Message
+            </label>
             <textarea
               name="message"
               rows="3"

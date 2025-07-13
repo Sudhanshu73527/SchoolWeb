@@ -73,7 +73,7 @@ const Hero2 = () => {
             </motion.h1>
           </AnimatePresence>
 
-          <p className="text-black text-lg font-light max-w-xl mx-auto">
+          <p className="text-black text-lg font-light max-w-xl mx-auto mb-10">
             "Education is the most powerful weapon which you can use to change the world. In learning you will teach, and in teaching you will learn."
           </p>
         </div>
@@ -83,3 +83,4 @@ const Hero2 = () => {
 };
 
 export default Hero2;
+

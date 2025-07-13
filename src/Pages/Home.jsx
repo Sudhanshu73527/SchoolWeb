@@ -16,6 +16,7 @@ import Sectiontabs from '../Components/Sectiontabs/Sectiontabs.jsx';
 import Contact from '../Components/Contact/Contact.jsx';
 import Topper from '../Components/Topper/Topper.jsx';
 import Hero from '../Components/Hero/Hero.jsx';
+import FaqSection from '../Components/FaqSection/FaqSection.jsx';
 const Home = () => {
   return (
     <>
@@ -31,6 +32,7 @@ const Home = () => {
     <Sectiontabs/>
     <Topper/> <br />
         <Contact/>
+        <FaqSection/>
     {/* <Footer/> */}
     
       {/* <Hero /> */}
